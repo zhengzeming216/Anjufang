@@ -1,0 +1,12 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/mx";
+
+
+global
+{
+	chrome-color: #E4E7EA;
+	font-size: 12;
+	color: #000000;
+}
+	

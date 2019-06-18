@@ -1,0 +1,45 @@
+﻿@{
+    Enums.eProjectMenu projectMenu = ViewBag.projectMenu;
+    AnjuHouseEntity anjuEntity = ViewBag.anjuEntity;
+    Layout = null;
+}
+@using SZHomeAnJuFang.Entity;
+@using SZHomeAnJuFang.Common;
+<div class="wrap path fix"><a href="/" title="深圳安居房首页">首页</a> > <a href="/" title="深圳安居房">深圳安居房</a> > <span class="blue-14">@anjuEntity.XMMC</span></div>
+@{
+    if (projectMenu != Enums.eProjectMenu.无)
+    {
+        <div class="pre100" id="detailNav">
+            <div class="wrap bg-white">
+                <div class="newhouse-detailNav anju-detailNav ps-r fix">
+                    <h1 class="left"><a href="/house/@(anjuEntity.DCId).html" title="@(anjuEntity.TGMC)">@anjuEntity.TGMC</a></h1>
+                    <ul>
+                        <li><a href="@(anjuEntity.BBSId>0? "http://bbs.szhome.com/"+anjuEntity.BBSId+".html":"http://bbs.szhome.com/30.html")" target="_blank" class="@(projectMenu == Enums.eProjectMenu.楼盘圈子 ? "active":"")" title="@(anjuEntity.XMMC)楼盘圈子">楼盘圈子</a></li>
+                        <li><a href="/project/comment/@(anjuEntity.DCId).html" class="@(projectMenu == Enums.eProjectMenu.楼评 ? "active":"")" title="@(anjuEntity.XMMC)楼评">楼评</a></li>
+                        <li><a href="/hx/@(anjuEntity.DCId).html" class="@(projectMenu == Enums.eProjectMenu.户型 ? "active":"")" title="@(anjuEntity.XMMC)户型">户型</a></li>
+                        <li><a href="/photoshow/@(anjuEntity.DCId)-4.html" class="@(projectMenu == Enums.eProjectMenu.样板间 ? "active":"")" title="@(anjuEntity.XMMC)样板间">样板间</a></li>
+                        <li><a href="/photoshow/@(anjuEntity.DCId).html" class="@(projectMenu == Enums.eProjectMenu.相册 ? "active":"")" title="@(anjuEntity.XMMC)相册">相册</a></li>
+                        <li><a href="/news/@(anjuEntity.DCId).html" class="@(projectMenu == Enums.eProjectMenu.资讯动态 ? "active":"")" title="@(anjuEntity.XMMC)资讯动态">资讯动态</a></li>
+                        <li><a href="/housedetail/@(anjuEntity.DCId).html" class="@(projectMenu == Enums.eProjectMenu.详细信息 ? "active":"")" title="@(anjuEntity.XMMC)详细信息">详细信息</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(function () {
+                //楼评导航浮动
+                var navH = $("#detailNav").offset().top;
+                $(window).scroll(function () {
+                    var scroH = $(this).scrollTop();
+                    if (scroH >= navH) {
+                        $("#detailNav").addClass("navfixed");
+                    } else if (scroH < navH) {
+                        $("#detailNav").removeClass("navfixed");
+                    }
+                })
+
+            })
+        </script>
+    }
+}

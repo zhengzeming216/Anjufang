@@ -1,0 +1,56 @@
+﻿@model string
+@{
+    ViewBag.Title = "未找到要访问的内容-深圳安居房-深圳房地产信息网";
+    ViewBag.MetaKeywords = "安居房,深圳安居房,公租房,深圳公租房,龙海家园公租房,深康村,深圳共有产权房";
+    ViewBag.description = "深圳安居房是深圳房地产信息网旗下网站，是深圳资料最全面、数据最真实、覆盖受众最广的安居房信息平台。为受众提供最权威的安居房和公租房的申请指引以及相关资讯的发布。";
+    string from = Model;
+    //缺省值
+    if (string.IsNullOrWhiteSpace(from))
+    {
+        from = "none";
+    }
+    from = from.ToLower();
+    string message = "您访问的页面不存在";
+    string url = "http://anju.szhome.com/";
+    string title = "深圳安居房";
+    switch (from)
+    {
+        case "house":
+            {
+                message = "没有该楼盘";
+                url = "/project.html";
+                title = "深圳安居房";
+                break;
+            }        
+        default:
+            {
+                message = "您访问的页面不存在";
+                url = "/";
+                title = "深圳安居房";
+                break;
+            }
+    }
+}
+
+@section Js{
+    <script type="text/javascript">
+        var i = 3;
+        function out() {
+            if (i > 1) {
+                i--;
+            }
+            else if (i == 1) {
+                location.href = $("#aUrl").attr("href");
+            }
+            document.getElementById('spanShowTime').innerHTML = i.toString();
+        }
+        setInterval('out();', 1000);
+    </script>
+}
+
+<div class="wrap ta-c pdt20 pdb20 fix">
+    <div class="bg_withe" style="min-height:230px; padding-top:120px;text-align: center;">
+        <p class="f36 mb20">@message</p>
+        <p><span id="spanShowTime" style="color: Red; font-weight: bold;">3</span>秒后我们将为您跳转到<a id="aUrl" href="@url">@title</a></p>
+    </div>
+</div>

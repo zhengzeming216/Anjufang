@@ -1,0 +1,38 @@
+﻿/*****map*****/
+.mask_default
+{
+        position: absolute;
+        font-size: 12px;
+        color: rgb(0, 88, 144);
+        font-family: 宋体;
+        white-space: nowrap;
+        cursor: pointer;
+        opacity: 1;
+        height:35px;
+}
+
+.maskleft label{height:35px;}
+.maskleft
+{   
+    height: 35px;
+    padding: 0px 3px 0px 8px;
+    font: 12px/23px Arial;
+    color: #fff;
+    background: url(http://static.szhome.com/market/images/map/mask_bk.gif) no-repeat;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.maskright
+{
+    width: 5px;
+    height: 35px;
+    background: url(http://static.szhome.com/market/images/map/mask_bk.gif) no-repeat;
+   
+}
+.maskright
+{
+    background-position: 100% -40px;
+}
+
+/*****map end*****/

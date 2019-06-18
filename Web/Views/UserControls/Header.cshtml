@@ -1,0 +1,60 @@
+﻿@using SZHomeAnJuFang.Common;
+@{
+    Layout = null;
+    int PageType = ViewBag.PageType;
+}
+<div class="pre100 bg-blue-23 fix">
+    <div class="wrap topBar bg-blue-23 fix">
+        <a href="/" title="深圳房地产信息网新房在线">
+            <img src="/content/images/szhome-logo.png" alt="深圳房地产信息网新房在线" title="深圳房地产信息网新房在线" class="left">
+        </a>
+        <p class="left ml10 Araebox"><span class="f14"> 深圳</span><a href="javascript:SelectCity();" title="切换站点" class="f12 ml5">[切换]</a></p>
+        <ul class="left">
+            <li class="na1"><a href="http://www.szhome.com/" target="_blank" title="房网首页">房网首页</a></li>
+            <li class="na2"><a href="http://bol.szhome.com/" title="咚咚新房">新房</a></li>
+            <li class="na3"><a href="http://zf.szhome.com/" target="_blank" title="咚咚二手房">二手房</a></li>
+            <li class="na4"><a href="http://zf.szhome.com/search-bzaa0000zzzz" target="_blank" title="租房">租房</a></li>
+            <li class="na5"><a href="http://news.szhome.com/" target="_blank" title="咚咚地产头条">资讯</a></li>
+            <li class="na6"><a href="http://anju.szhome.com/" target="_blank" title="安居房" class="active">安居房</a></li>
+            <li class="na7"><a href="http://csgx.szhome.com/" target="_blank" title="城市更新">城市更新</a></li>
+            <li class="na8"><a href="http://cfj.szhome.com/" target="_blank" title="查房价">查房价</a></li>
+            <li class="na9"><a href="http://family.szhome.com/" target="_blank" title="深圳房地产信息网装修频道">装修家居</a></li>
+            <li class="na10"><a href="http://bbs.szhome.com/" target="_blank" title="家在深圳论坛">家在论坛</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部导航-->
+<div class="pre100 bg-white  fix">
+    <div class="wrap newhouseHeader bg-white fix">
+        <ul class="left">
+            <li class="@(PageType == (int)Enums.ePageType.首页 ? "active":"")"><a title="首页" href="/">首页</a></li>
+            <li class="@(PageType == (int)Enums.ePageType.安居房 ? "active":"")"><a title="安居房" href="/project.html?prot=1">安居房</a></li>
+            <li class="@(PageType == (int)Enums.ePageType.公租房 ? "active":"")"><a title="公租房" href="/project.html?prot=2">公租房</a></li>
+            <li class="@(PageType == (int)Enums.ePageType.人才房 ? "active":"")"><a title="人才房" href="/project.html?prot=4">人才房</a></li>
+            <li class="@(PageType == (int)Enums.ePageType.轮候排名查询 ? "active":"")"><a title="轮候排名查询" href="/ajpm.html">轮候排名查询</a></li>
+            <li class="@(PageType == (int)Enums.ePageType.百问百答 ? "active":"")"><a title="百问百答" href="/question.html">百问百答</a></li>
+        </ul>
+        <div class="sechbox s-l ps-r right anju-seacbox">
+            <div class="selcbox" style="cursor:pointer;">
+                <div onclick="ShowSelect();"><span id="spanType" val="1">项目</span><span class="anjuselc-ar-b"></span></div>
+                <ul id="ulSel" style="display:none;">
+                    <li><a href="javascript:void(0);" onclick="Select(1,this);">项目</a></li>
+                    <li><a href="javascript:void(0);" onclick="Select(2, this);">资讯</a></li>
+                </ul>
+            </div>
+            <input type="text" placeholder="楼盘名称" id="txtKey" onblur="ShowAutoDiv()" maxlength="20"><button type="button" onclick="SelectProject(0,'')"><i class="icon04"></i></button>
+            <ul class="seachFocus" style="display:none" id="searchList"></ul>
+            <ul class="seachFocus" id="searchHistory" style="display:none"></ul>
+        </div>
+    </div>
+</div>
+<!--城市选择弹出窗-->
+<div id="divSelectCity" class="l-window" style="display:none;">
+    <h5>选择城市<em>当前城市:深圳</em></h5>
+    <ul>
+        <li>D<a href="http://dg.szhome.com/" title="东莞新房">东莞</a></li>
+        <li>H<a href="http://hz.szhome.com/" title="惠州新房">惠州</a></li>
+        <li>S <a href="javascript:layer.closeAll();" title="深圳新房">深圳</a></li>
+    </ul>
+</div>
+<!--城市选择弹出窗结束-->

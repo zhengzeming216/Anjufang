@@ -1,0 +1,1858 @@
+﻿@charset "utf-8"
+.clean { clear: both;}
+.bigdiv {  width: 960px; margin: 0 auto;padding: 0;background:#FFF;/*--*/}
+.bbgtag a.bbgtagu ,
+.bbgtaggroup a.bbgtagsAA , .bbgtaggroup a.bbgtagsAA:hover , .bbgtaggroup a.bbgtagsAAc ,
+.bbgtaggroup a.bbgtagsAB , .bbgtaggroup a.bbgtagsAB:hover , .bbgtaggroup a.bbgtagsABc ,
+.bbgtaggroup a.bbgtagsAC , .bbgtaggroup a.bbgtagsAC:hover , .bbgtaggroup a.bbgtagsACc ,
+.bbgtaggroup a.bbgtagsAD , .bbgtaggroup a.bbgtagsAD:hover , .bbgtaggroup a.bbgtagsADc ,
+.bbgtaggroup a.bbgtagsAE , .bbgtaggroup a.bbgtagsAE:hover , .bbgtaggroup a.bbgtagsAEc ,
+.bbgtaggroup a.bbgtagsBA , .bbgtaggroup a.bbgtagsBA:hover , .bbgtaggroup a.bbgtagsBAc ,
+.bbgtaggroup a.bbgtagsBB , .bbgtaggroup a.bbgtagsBB:hover , .bbgtaggroup a.bbgtagsBBc ,
+.bbgtaggroup a.bbgtagsBC , .bbgtaggroup a.bbgtagsBC:hover , .bbgtaggroup a.bbgtagsBCc ,
+.bbgtaggroup a.bbgtagsBD , .bbgtaggroup a.bbgtagsBD:hover , .bbgtaggroup a.bbgtagsBDc ,
+.bbgtaggroup a.bbgtagsCA , .bbgtaggroup a.bbgtagsCA:hover , .bbgtaggroup a.bbgtagsCAc ,
+.bbgtaggroup a.bbgtagsCB , .bbgtaggroup a.bbgtagsCB:hover , .bbgtaggroup a.bbgtagsCBc ,
+.bbgtaggroup a.bbgtagsCC , .bbgtaggroup a.bbgtagsCC:hover , .bbgtaggroup a.bbgtagsCCc ,
+.bbgtaggroup a.bbgtagsDA , .bbgtaggroup a.bbgtagsDA:hover , .bbgtaggroup a.bbgtagsDAc ,
+.bbgtaggroup a.bbgtagsDB , .bbgtaggroup a.bbgtagsDB:hover , .bbgtaggroup a.bbgtagsDBc ,
+.bbgtaggroup a.bbgtagsEA , .bbgtaggroup a.bbgtagsEA:hover , .bbgtaggroup a.bbgtagsEAc ,
+.bbgtaggroup a.bbgtagsEB , .bbgtaggroup a.bbgtagsEB:hover , .bbgtaggroup a.bbgtagsEBc ,
+.bbgtaggroup a.bbgtagsEC , .bbgtaggroup a.bbgtagsEC:hover , .bbgtaggroup a.bbgtagsECc ,
+.bbgtaggroup a.bbgtagsED , .bbgtaggroup a.bbgtagsED:hover , .bbgtaggroup a.bbgtagsEDc ,
+.bbgtaggroup a.bbgtagsFA , .bbgtaggroup a.bbgtagsFA:hover , .bbgtaggroup a.bbgtagsFAc ,
+.bbgtaggroup a.bbgtagsFB , .bbgtaggroup a.bbgtagsFB:hover , .bbgtaggroup a.bbgtagsFBc ,
+.bbgtaggroup a.bbgtagsFC , .bbgtaggroup a.bbgtagsFC:hover , .bbgtaggroup a.bbgtagsFCc {background: url(http://static.szhome.com/market/images/brokerbg-image-tag.gif) no-repeat;}
+.bbgtag a.bbgtagu:hover {background: url(http://static.szhome.com/market/images/brokerbg-image-tagpass.gif) no-repeat;}
+.bbgtag a.bbgtagd {background: url(http://static.szhome.com/market/images/brokerbg-image-tagopen.gif) no-repeat;}
+.bbgrincentre .tag {background: url(http://static.szhome.com/market/images/brokerbg-image-projecttag.gif) no-repeat;}
+.news .searchtag_ac , .releasetop .searchtag_ac , .release .searchtag_ac {background: url(http://static.szhome.com/market/images/brokerbg-image-projecttagin.gif) no-repeat;}
+.news .searchtag_st , .releasetop .searchtag_st , .release .searchtag_st {background: url(http://static.szhome.com/market/images/brokerbg-image-projecttagpass.gif) no-repeat;}
+.backbghome ,.manageshop ,a.iinshop ,.inportantinfomation ,.news .newicon,.news01.newico ,.news .hoticon ,.news01 .hoticon ,.newsshow ,.newsshow01,.bbgrincentre .cgprompt ,.bppserve .cgprompt ,.releaserem ,.draft ,.rsicon ,.rimgli .bbginputbuttoncl ,.rimgmov .buttonl ,.rimgmov .buttonr ,.hintr ,.hintw ,.pass ,.error ,.laimg {background: url(http://static.szhome.com/market/images/market-szhome-imageCY.gif) no-repeat;}
+.biography ,.releasepro ,.bbgesc input ,.bitpass span ,
+.rimg .bbginputbutton ,.cbutton .bbginputbutton ,.rbutton .bbginputbutton ,.rbuttonml .bbginputbutton ,.rbuttonms .bbginputbutton,.plbutton_01,.plbutton_02,.plbutton_03,.plbutton_04，.savebutton {background: url(http://static.szhome.com/market/images/market-szhome-image.gif) no-repeat;}
+/*----------------left----------------*/
+.brokerbgleft {width: 170px;margin: 2px 7px 0 0;float: left;overflow:hidden;}
+.backbghome {width: 111px;height: 30px;margin: 0 0 2px 0;padding: 0 0 0 59px;background-color: #235eaa;background-position: 38px -683px;font-size: 12px;line-height: 30px;float: left;}
+.backbghome a {color: #fff;}
+.backbghome a:visited  {  color: #fff;}
+.backbghome a:hover {color: #ff0;}
+.brokerinformation {width: 170px;background-color: #30ace6;float: left;}
+.bbgesc {position: relative;left: 0;top: 0;z-index: 5;}
+.bbgesc input {width: 75px;height: 26px;background-position: 0 -327px;border: 0;cursor: pointer;}
+.bitop {width: 90px;margin: 0 39px 12px 41px;_margin: 0 39px 6px 41px;position: relative;
+left: 0;top: -7px;z-index: 2;}
+.bitpass {width: 54px;height: 17px;}
+.bitpass span {width: 54px;height: 17px;margin: 0 0 0 36px;display: block;}
+.bitphoto {height: 120px;}
+.bitname {height: 28px; margin: 0;  *margin: -2px 0 0 0 !important;padding: 0;background: #0a97d9;font-size: 18px;color: #fff;line-height: 28px;text-align: center;}
+.bibottom {margin:0 6px;;color: #fff;z-index: 2;}
+/*--*/
+.bibl {width: 48px;float: left;}
+.bibline {width: 1px;height: 80px;margin: 5px;background:#7bddf9;float: left;}
+.bibr {float: left;}
+.bilj {width: 170px;height: 30px;background-color: #fff;}
+.bilj span {width: 142px;height: 30px;margin: 0 0 0 28px;background: url(http://static.szhome.com/market/images/biljbg.gif) left top repeat-x;display: block;}
+.brokerbgtag {width: 170px;float: left;}
+.manageshop {width: 111px;height: 32px;padding: 0 0 0 59px;background-color: #2a8ad4;background-position: 38px -709px;font-size: 12px;line-height: 32px;float: left;color:#FFF;}
+.manageshop a {color: #fff;}
+.manageshop a:visited  {  color: #fff;}
+.manageshop a:hover {color: #ff0;}
+.bbgtag {width: 170px;float: left;}
+.bbgtag a.bbgtagu , .bbgtag a.bbgtagd {width: 170px;height: 44px;background-color: #8bd7f9;float: left;}
+.bbgtaggroup {width: 147px;padding: 12px 9px 6px 14px; background: #e8f1f8 url(http://static.szhome.com/market/images/menu/bitbbg.gif) left top repeat-x;float: left;}
+.bbgtaggroup a.bbgtags {width: 147px;height: 25px;margin: 1px 0 5px 0;float: left;}
+.bbgtagu,.bbgtag,.bbgtagd  {width: 170px;height: 44px;background-color: #8bd7f9;float: left;}
+.numberCHA{width:50px; height:44px; margin-left:6px; line-height:44px; float:left;font-family:Arial; color:#FFF; font-size:36px;display:inline;}
+.title_menu{width:86px; height:44px; font-size:16px;line-height:44px;font-weight:bold; color:#112954; float:left;}
+.title_menu_hover{width:86px; height:44px; font-size:16px;line-height:44px;font-weight:bold; color:#235eaa; float:left;}
+.bgup{background: url(http://static.szhome.com/market/images/menu/arrow_up.jpg) no-repeat;width:28px; height:44px; float:left;}
+.bgdown{background: url(http://static.szhome.com/market/images/menu/arrow_down.jpg) no-repeat;width:28px; height:44px; float:left;}
+.title_submenu_bg{width:147px;height:25px;}
+.title_submenu_bg:hover{background-color:#d1efff;}
+.title_submenu_click{width:147px;height:25px;background-color:#2a8ad4;}
+.title_submenu1{width:25px; height:25px;text-align:center;float:left;margin-left:5px;display:inline;}
+.title_submenu2
+{width:112px; height:25px; font-size:14px;line-height:25px;font-weight:bold; color:#112954; float:left;}
+.title_submenu2_click
+{width:105px; height:25px; font-size:14px;line-height:25px;font-weight:bold; color:#ffffff; float:left;}
+.title_submenu2 span,.title_submenu2_click span{position:relative;}
+.title_submenu2 .op_img,.title_submenu2_click span .op_img{position:absolute;right:-29px;_right:-15px;top:0;}
+.title_submenu2 .op_img{_right:-5px;}
+/*----------------right---------------*/
+.brokerbgright {width: 783px;margin: 2px 0 0 0;float: left;overflow: hidden;}
+.toplink {height: 29px;background: #039de5;border-bottom: 1px #fff solid;line-height: 28px;}
+.toplink a {padding: 2px 19px;border-right: 1px #fff solid;  color: #fff;}
+.toplink a:visited  {  color: #fff;}
+.toplink a:hover  {  color: #ff0;}
+.topinformation {width: 783px;height: 135px;background: #cfe8fb;border-bottom: 1px solid #ececec;overflow: hidden;position: relative;left: 0;top: 0;}
+.bottomword {
+height: 117px;
+	margin: 18px 0 0 15px;
+	font-size: 35px;
+	color: #036;
+	font-weight: bold;
+	line-height: 35px;
+}
+
+.tinformation {
+	width: 783px;
+	height: 45px;
+	padding: 90px 0 0 0;
+	background: url(http://static.szhome.com/market/images/brokerbgtopimage.jpg) top left no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+.tinformation .tiwork {
+	padding: 0 12px 0 0;
+	color: #036;
+	float: right;
+	display: block;
+}
+
+a.iinshop {
+	padding: 0 5px 0 25px;
+	background-position: 0 -740px;
+	color: #036;
+	line-height: 25px;
+	display: inline-block;
+}
+a.iinshop:visited {
+	color: #036;
+}
+a.iinshop:hover {
+	color: #f00;
+}
+
+span.fgline {
+	width: 1px;
+	height: 10px;
+	background: #069;
+	display: inline-block !important;
+}
+
+a.iinn {
+	padding: 0 0 0 5px;
+	color: #036;
+	line-height: 25px;
+	display: inline-block;
+}
+a.iinn:visited {
+	color: #036;
+}
+a.iinn:hover {
+	color: #f00;
+}
+
+.inportantinfomation {
+	height: 28px;
+	_height:25px;
+	margin:0px;
+	padding: 0 0 0 40px;
+	background-color: #ebebeb;
+	background-position: 18px -769px;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #f4f4f4;
+	line-height: 28px;
+	_line-height:25px;
+}
+
+.inportantinfomation a {
+	color: #000;
+	text-decoration: underline;
+}
+.inportantinfomation a:hover {
+	color: #c60;
+	text-decoration: underline;
+}
+/*-in-*/
+.bbgrin {
+	margin: 8px 0 0 0;
+}
+
+/*-top-*/
+.bbgrincentre .top {
+	width: 783px;
+	border-bottom: 3px solid #2a8ad4;
+	float: left;
+}
+.bbgrincentre .tag {
+	width: 160px;
+	height: 30px;
+	background-color: #fca227;
+	background-position: 0 0;
+	float: left;
+}
+
+.bbgrincentre .welcome {
+	height: 22px;
+	margin: 8px 5px 0 0;
+	font-family:  "微软雅黑" , "黑体" ;
+	color: #235eaa;
+	font-weight: bold;
+	line-height: 22px;
+	float: right;
+}
+
+.bbgrincentre .work {
+	padding: 10px 4px;
+	background: #f2f7fa;
+	border-right: 1px solid #e6edf5;
+	border-bottom: 1px solid #e6edf5;
+	border-left: 1px solid #e6edf5;
+	float: left;
+}
+
+.bbgrincentre .work01 {
+	padding: 10px 4px;
+	background: #ffeed6;
+	float: left;
+}
+
+.bbgrincentre .work li {
+	width: 757px;
+	padding: 0 7px;
+	border: 1px solid #f2f7fa;
+	line-height: 27px;
+}
+
+.bbgrincentre .work01 li {
+	width: 757px;
+	padding: 0 7px;
+	
+	line-height: 27px;
+
+	cursor:pointer;
+}
+
+.redwork {
+	color: #f00;
+}
+.greenwork {
+	color: #390;
+}
+.bbgrincentre .work li.forieli {
+	_margin: 0 0 6px 0;
+}
+
+.bbgrincentre .work li.whitebg {
+	background-color: #fff;
+	border: 1px solid #cfdded;
+	line-height: 25px;
+	cursor:pointer;
+}
+
+.bbgrincentre .work01 li.whitebg {
+	background-color: #fff;
+	border: 1px solid #ffce8b;
+	line-height: 25px;
+	cursor:pointer;
+}
+/*-top-*/
+.bbgrin .news {
+	width: 783px;
+	_width: 785px;
+	height: 30px;
+	_margin: 0 0 0 -2px;
+	border-bottom: 3px solid #2a8ad4; font-size:16px; font-weight:bold; line-height:30px; text-align:center;
+}
+
+.news .tag {
+	float: left;
+	position: relative;
+	left: -2px;
+
+	top: 0;
+}
+
+.news .searchtag_ac {
+	width: 155px;
+	height: 30px;
+	margin: 0 2px 0 2px;
+	background-color: #2a8ad4;
+	color:#FFF;
+}
+.news .searchtag_st {
+	width: 155px;
+	height: 28px;
+	margin: 0 2px 2px 2px;
+	background-color: #d9eaf7;
+	color:#91734a;
+	cursor: pointer;
+}
+
+.bbgrin .news01 {
+	width: 783px;
+	_width: 785px;
+	height: 30px;
+	_margin: 0 0 0 -2px;
+	border-bottom: 3px solid #fca227; font-size:16px; font-weight:bold; line-height:30px; text-align:center;
+}
+
+.news01 .tag01 {
+	float: left;
+	position: relative;
+	left: -2px;
+	top: 0;
+}
+.news01 .newico{ position:absolute; top:-2px; left:150px; width:20px;height:13px;background-position:-20px -199px;}
+
+.news01 .searchtag_ac01 {
+	width: 155px;
+	height: 30px;
+	margin: 0 2px 0 2px;
+	background-color: #fca227;
+	color:#FFF;
+}
+.news01 .searchtag_st01 {
+	width: 155px;
+	height: 28px;
+	margin: 0 2px 2px 2px;
+	background-color: #fedcad;
+	color:#91734a;
+	cursor: pointer;
+}
+
+
+
+
+
+.news .newicon {
+	width: 20px;
+	height: 13px;
+	background-position: -20px -199px;
+	display: block;
+	position: absolute;
+	left: 118px;
+	top: -2px;
+	z-index: 3;
+	overflow: hidden;
+}
+.news01 .newicon {
+	width: 20px;
+	height: 13px;
+	background-position: -20px -199px;
+	display: block;
+	position: absolute;
+	left: 118px;
+	top: -2px;
+	z-index: 3;
+	overflow: hidden;
+}
+
+.news .hoticon {
+	width: 20px;
+	height: 13px;
+	background-position: 0 -189px;
+	display: block;
+	position: absolute;
+	left: 118px;
+	top: -2px;
+	z-index: 3;
+	overflow: hidden;
+}
+.news01 .hoticon {
+	width: 20px;
+	height: 13px;
+	background-position: 0 -189px;
+	display: block;
+	position: absolute;
+	left: 118px;
+	top: -2px;
+	z-index: 3;
+	overflow: hidden;
+}
+
+.newsshow {
+   width:19px;height:17px;
+	margin: 12px 5px;
+	background-position: 6px -798px;
+}
+.newsshow01 {
+	margin: 12px 5px;
+	background-position: 0 -773px;
+}
+
+
+.blackwork {
+	font-size: 14px;
+}
+a.redbigwork {
+	font-size: 14px;
+	color: #f00;
+}
+a.redbigwork:hover {
+    text-decoration: underline;
+}
+a.bluework {
+	color: #2a8ad4;
+}
+a.bluework:hover {
+    text-decoration: underline;
+}
+
+.newsmore {
+	widows: 40px;
+	position: relative;
+	left: 740px;
+	top: -23px;
+	z-index: 100;
+}
+/*-top-*/
+.bbgritable {
+	width:100%;
+	background: #f2f7fa;
+	border:1px solid #e6edf5;
+	line-height: 30px;
+	text-align: center; border-collapse:collapse;
+}
+.bbgritable td {
+	border:1px solid #e6edf5;
+}
+
+.bbgritdf {
+	border-right: 1px solid #b0d3ed;
+	border-bottom: 1px solid #b0d3ed;
+}
+.bbgritdfe {
+	border-bottom: 1px solid #b0d3ed;
+}
+.bbgritds {
+	border-right: 1px solid #b0d3ed;
+}
+
+.bile {
+	width: 170px;
+	height: 100px;
+	background-color: #fff;
+}
+.bile span {
+	width: 142px;
+	height: 100px;
+	margin: 0 0 0 28px;
+	background: url(http://static.szhome.com/market/images/bilebg.gif) left top repeat-x;
+	float: left !important;
+	_float: none;
+	display: block;
+}
+/*-1-1-*/
+.bbgritablein {
+	text-align: center;
+}
+/*-1-2-*/
+.bbgrincentre .cgprompt {
+	height: 22px;
+	margin: 8px 5px 0 0;
+	padding: 0 0 0 20px;
+	background-position: 0 -828px;
+	line-height: 22px;
+	float: right;
+}
+
+.bluetoptag {
+	width: 759px;
+	height: 25px;
+	padding: 0 0 0 24px;
+	background: #d9eaf7;
+	float: left;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.contentgroup {
+	width: 745px;
+	padding: 16px 16px 24px 20px;
+	border-right: 1px solid #e6edf5;
+	border-bottom: 1px solid #e6edf5;
+	border-left: 1px solid #e6edf5;
+	float: left;
+}
+
+.bppphoto {
+    width: 96px;
+	margin: 8px 0 0 0;
+	float: left;
+	text-align: center;
+	font-size: 13px;
+	line-height: 22px;
+	letter-spacing: 1px;
+	color: #390;
+}
+
+.bppphoto img.bppimg {
+	padding: 2px;
+	border: 1px solid #CCC;
+}
+
+.bppbasic {
+    width: 260px;
+	margin: 10px 0 0 15px;
+	float: left;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.bppbasic .bbginputtext {
+    width: 70px;
+	padding: 1px 4px;
+	background: #fff;
+	border: 1px solid #999;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+
+.bppbasic .bbginputbutton {
+	width: 85px;
+	height: 21px;
+	margin: 0 0 0 8px;
+	_margin: 1px 0 0 8px;
+	padding: 1px 12px;
+	_padding: 2px 0 0 0;
+	background: #d1e1ef url(http://static.szhome.com/market/images/bbgbuttonbg.gif) left top repeat-x;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	line-height: 18px;
+	_line-height: 14px;
+	cursor: pointer;
+}
+
+.biography {
+	width: 355px;
+	padding: 21px 0 0 0;
+	background-position: 5px -355px;
+	float: right;
+}
+.biography textarea {
+	width: 350px;
+	margin: 1px 0 0 0;
+	padding: 5px;
+	background-color: #fff;
+	line-height: 17px;
+}
+
+.biographybutton {
+	width: 150px;
+	height: 25px;
+	margin: 6px 0 0 110px !important;
+	*margin: 6px 0 0 108px !important;
+	_margin: 6px 0 0 108px;
+	padding: 1px 15px;
+	_padding: 2px 0 0 2px;
+	background: #d1e1ef url(http://static.szhome.com/market/images/bbgbuttonbg.gif) left top repeat-x;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	line-height: 18px;
+	_line-height: 14px;
+	cursor: pointer;
+}
+
+.bpptel , .bppcap , .bpppassword , .bppnewphoto , .bppserve , .bppwebcontact , .bppshopowner , .bppcompany {
+	margin: 0 0 0 2px;
+	float: left;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.bpptel .bbginputtext , .bppcap .bbginputtext , .bpppassword .bbginputtext , .bppwebcontact .bbginputtext {
+    width: 120px;
+	margin: 3px 0 0 0;
+	padding: 1px 4px;
+	background: #fff;
+	border: 1px solid #999;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+
+.bppnewphoto .bbginputtext {
+    width: 520px;
+	margin: 3px 0 0 0;
+	padding: 1px 4px;
+	background: #fff;
+	border: 1px solid #999;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+
+.bpptel .bbginputbutton {
+    width: 230px !important;
+    *width: 230px !important;
+    _width: 230px;
+	height: 21px;
+	margin: 0 0 0 8px;
+	_margin: 1px 0 0 8px;
+	padding: 1px 10px 1px 15px;
+	_padding: 2px 0 0 8px;
+	background: #d1e1ef url(http://static.szhome.com/market/images/bbgbuttonbg.gif) left top repeat-x;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	line-height: 18px;
+	_line-height: 14px;
+	cursor: pointer;
+}
+
+.bppcap .bbginputbutton , .bpppassword .bbginputbutton , .bppnewphoto .bbginputbutton {
+	height: 20px;
+	margin: 0 0 0 8px;
+	_margin: 1px 0 0 8px;
+	padding: 0 10px 1px 12px !important;
+	*padding: 0 0 1px 0 !important;
+	_padding: 1px 0 0 2px;
+	background: #d1e1ef url(http://static.szhome.com/market/images/bbgbuttonbg.gif) left top repeat-x;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	line-height: 18px;
+	_line-height: 14px;
+	cursor: pointer;
+}
+
+.bppserve li.servearea {
+    _width: 740px;
+	height: 14px !important;
+	_height: auto;
+	padding: 0 0 18px 0 !important;
+	_padding: 0 0 8px 0;
+	line-height: 14px !important;
+}
+
+.bppserve .bbginputradio , .bppwebcontact .bbginputradio , .releaseli .bbginputradio , .workma .bbginputradio {
+	width: 16px;
+	height: 16px;
+	margin: 0 2px 2px 0;
+}
+
+.bppserve .cgprompt {
+	margin: 2px 70px 0 0 !important;
+	*margin: -19px 80px 0 0 !important;
+	_margin: -20px 80px 0 0;
+	background-position: 0 -828px;
+	float: right;
+	font-size: 12px;
+}
+
+.bppserve div.servezoone {
+    width: 704px;
+	margin: 0 0 0 20px;
+	padding: 0 4px 4px 10px;
+	border: 1px solid #d9eaf7;
+	font-size: 12px;
+}
+
+.bppserve .bbginputbutton {
+	height: 20px;
+	margin: 8px 0 0 320px;
+	_margin: 9px 0 0 320px;
+	padding: 0 15px 1px 17px !important;
+	*padding: 0 5px 1px 5px !important;
+	_padding: 1px 5px 0 7px;
+	background: #d1e1ef url(http://static.szhome.com/market/images/bbgbuttonbg.gif) left top repeat-x;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	line-height: 18px;
+	_line-height: 14px;
+	cursor: pointer;
+}
+
+.servezoone .bbginputcheckbox {
+    width: 12px !important;
+    _width: 16px;
+	height: 12px !important;
+	_height: 16px;
+	margin: 7px 2px 0 0 !important;
+	_margin: 8px 2px 0 0;
+}
+
+.bppwebcontact .bbginputbutton {
+	width: 130px;
+	margin: 8px 0 0 70px;
+	padding: 1px 10px 1px 12px;
+	_padding: 2px 0 0 0;
+	background: #d1e1ef url(http://static.szhome.com/market/images/bbgbuttonbg.gif) left top repeat-x;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	line-height: 18px;
+	_line-height: 14px;
+	cursor: pointer;
+}
+
+.bppshopowner .bbginputoption {
+	margin: 5px 10px 0 0;
+	background: #fff;
+}
+
+.bppshopowner .bbginputtext {
+    width: 300px;
+	margin: 5px 0 0 0;
+	padding: 1px 4px;
+	background: #fff;
+	border: 1px solid #999;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+
+.bppshopowner .bbginputbutton {
+	height: 20px;
+	margin: 8px 0 0 220px;
+	_margin: 9px 0 0 220px;
+	padding: 0 15px 1px 17px !important;
+	*padding: 0 5px 1px 5px !important;
+	_padding: 1px 5px 0 7px;
+	background: #d1e1ef url(http://static.szhome.com/market/images/bbgbuttonbg.gif) left top repeat-x;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	line-height: 18px;
+	_line-height: 14px;
+	cursor: pointer;
+}
+/*-1-3-*/
+.bbgritd td {
+	padding: 0 0 0 18px;
+	line-height: 35px;
+	text-align: left;
+}
+/*-1-4-*/
+.bppcompany .bbginputtext {
+	margin: 10px 0 0 0;
+	padding: 1px 4px 2px 4px;
+	background: #fff;
+	border: 1px solid #999;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+
+.bppcompany .clogo {
+	width: 165px; 
+	height: 64px;
+	margin: 12px 5px 0 0;
+	background-color: #fff; 
+	border: 1px solid #ccc; 
+	display: inline-block;
+}
+
+.bppcompany .bbginputbutton {
+	height: 20px;
+	margin: 0 0 0 8px;
+	_margin: 1px 0 0 8px;
+	padding: 0 10px 1px 12px !important;
+	*padding: 0 0 1px 0 !important;
+	_padding: 1px 0 0 2px;
+	background: #d1e1ef url(http://static.szhome.com/market/images/bbgbuttonbg.gif) left top repeat-x;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	line-height: 18px;
+	_line-height: 14px;
+	cursor: pointer;
+}
+
+.bppcompany .clogow {
+	width: 200px; 
+	position: relative; 
+	left: 0; 
+	top: -6px !important;
+	*top: -2px !important; 
+	_top: -2px;
+}
+
+.bppcompany .clogot {
+	display: inline-block; 
+	font-size: 12px; 
+	line-height: 18px; 
+	position: relative; 
+	left: -208px; 
+	top: -29px !important; 
+	*top: -25px !important; 
+	_top: -25px;
+}
+
+.bppcompany .bbginputoption {
+	margin: 8px 10px 0 0;
+	background: #fff;
+}
+
+.cbutton .bbginputbutton {
+	width: 127px;
+	height: 34px;
+	margin: 10px 0 0 71px;
+	_margin: 12px 0 0 73px;
+	background-position: -132px -318px;
+	border: none;
+	cursor: pointer;
+}
+/*-2-1-*/
+.bbgrin .releasetop , .bbgrin .release , .bbgrin .releasema ,  .bbgrin .releaseml {
+	width: 783px;
+	_width: 785px;
+	_margin: 0 0 0 -2px;
+}
+.bbgrin .releasetop {
+	height: 35px;
+	border-bottom: 4px solid #2a8ad4;
+}
+.bbgrin .release {
+	height: 33px;
+	border-bottom: 3px solid #8bd7f9;
+	overflow: hidden;
+}
+
+.releasetop .tag , .release .tag {
+	float: left;
+	position: relative;
+	left: -2px;
+	top: 0;
+}
+
+.releasetop a.releasetoptag {
+	height: 33px;
+	float: left;
+}
+.release a.releasetoptag {
+	height: 31px;
+	float: left;
+}
+
+.releasetop .searchtag_ac {
+	height: 35px;
+	margin: 0 1px 0 2px;
+	background-color: #2a8ad4;
+}
+.releasetop .searchtag_st {
+	height: 33px;
+	margin: 0 1px 2px 2px;
+	background-color: #cce3f5;
+	cursor: pointer;
+}
+
+.release .searchtag_ac {
+	height: 33px;
+	margin: 0 1px 0 2px;
+	background-color: #8bd7f9;
+}
+.release .searchtag_st {
+	height: 31px;
+	margin: 0 1px 2px 2px;
+	background-color: #ebebeb;
+	cursor: pointer;
+}
+
+.remind .work {
+	width: 761px;
+	padding: 12px 11px 8px 9px;
+	background: #f2f7fa;
+	border-right: 1px solid #e6edf5;
+	border-bottom: 1px solid #e6edf5;
+	border-left: 1px solid #e6edf5;
+	float: left;
+}
+
+
+
+.redbold {
+	color: #f00;
+	font-weight: bold;
+}
+
+.bginflash {
+	width: 760px;
+	height: 80px;
+	padding: 1px;
+	background: #fff;
+	border: 1px solid #bad9ef;
+}
+
+.releaserem {
+	margin: 0 0 0 10px;
+	padding: 0 0 0 12px;
+	background-position: 0 -937px;
+	font-weight: bold;
+	line-height: 40px;
+	float: left;
+}
+
+.draft {
+	height: 15px;
+	margin: 12px 5px 0 0;
+	padding: 0 0 0 20px;
+	background-position: 0 -922px;
+	color: #090;
+	float: right;
+}
+.draft a {
+	color: #090;
+	text-decoration: none;
+}
+.draft a:hover {
+	color: #090;
+	text-decoration: underline;
+}
+
+.bbgrin .releasein {
+	width: 763px;
+	_width: 765px;
+	_margin: 0 0 0 -2px;
+	padding: 10px 10px;
+}
+
+.bbgrin .releasein li {
+	float: left;
+}
+
+.releasemu {
+	width: 723px;
+	padding: 0 20px;
+	background-color: #f0f8ff;
+	color: #03c;
+	font-weight: bold;
+	line-height: 25px;
+	text-align: center;
+	float: left;
+}
+.releasemu a {
+	font-weight: normal;
+}
+
+.releasemu .remleft {
+	float: left;
+}
+
+.releasemu .temhouse a {
+	font-weight: bold;
+	float: right;
+}
+
+.releasepro {
+	width: 763px;
+	height: 14px;
+	margin: 12px 0 18px 0;
+}
+
+.releaseli {
+	width: 763px;
+	margin: 8px 0 !important;
+	*margin: 5px 0 !important;
+	_margin: 5px 0;
+	color: #777;
+	line-height: 30px;
+}
+
+.releaseli .rli {
+	width: 105px; 
+	height: 26px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 26px;
+	text-align: right;
+	float: left;
+}
+
+.releaseli .rliname {
+	color: #000;
+	float: right;
+}
+
+.releaseli .rsicon {
+	width: 10px;
+	height: 10px;
+	margin: 6px 4px 0 0;
+	background-position: 0 -950px;
+	float: right;
+}
+
+.releaseli .bbginputtext {
+	height: 20px;
+	padding: 1px 4px;
+	background: #fff;
+	border: 1px solid #999;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	float: left;
+}
+
+.releaseli .rlic {
+	*padding: 4px 0 0 0 !important;
+	_padding: 4px 0 0 0;
+	color: #000;
+	font-size: 14px;
+	line-height: 26px !important;
+	*line-height: 20px !important;
+	_line-height: 20px;
+	float: left;
+}
+
+.releaseli .bbginputradio {
+	width: 16px;
+	height: 16px;
+	margin: 0 2px 2px 0;
+	background-color: #fff;
+}
+
+.mah a , .releaseli a {
+	text-decoration: underline;
+}
+
+.releaseli .bbginputcheckbox {
+	margin: -2px 2px 0 0 !important;
+	_margin: -2px 2px 0 0;
+}
+
+.releaseli textarea {
+	width: 550px;
+	margin: 1px 0 0 0;
+	padding: 5px;
+	background-color: #fff;
+	line-height: 17px;
+}
+
+.imgexb {
+	width: 698px !important;
+	*width: 686px !important;
+	_width: 686px;
+	margin: 10px 13px;
+	padding: 8px 5px 0 5px;
+	background: #f0f8ff;
+	border: 1px solid #bdd9f0;
+	float: left;
+}
+
+.imgexw {
+	padding: 0 0 0 40px;
+	color: #000;
+	font-weight: normal;
+	line-height: 26px;
+	letter-spacing: 1px;
+}
+
+.bluebold {
+	color: #00f;
+	font-weight: bold;
+}
+
+.releaseimg {
+	width: 763px;
+	margin: 10px 0 !important;
+	*margin: 17px 0 !important;
+	_margin: 17px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #a5e3ff;
+	color: #777;
+}
+
+.releaseimg .rli {
+	width: 105px;
+	text-align: right;
+	float: left;
+}
+
+.releaseimg .rliname {
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	float: right;
+}
+/*--- ---*/
+.relup {
+	width: 500px;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+
+.rliparch {
+	width: 500px;
+	padding: 0 8px;
+	background: #f3fbfe;
+	border: 1px solid #bddaf0;
+	color: #777;
+	line-height: 25px;
+	position: absolute;
+	left: 105px;
+	top: -9px !important;
+	*top: -12px !important;
+	_top: -12px;
+	z-index: 500;
+}
+
+.rliparch a {
+	font-weight: bold;
+}
+
+iframe.iframecss { 
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	left: 0px;
+	top: 0; 
+	z-index: -1; 
+	visibility: inherit; 
+	opacity: .0;
+	filter: alpha( opacity=0 ); 
+	-moz-opacity: 0;
+}
+
+.releaseimg .rimg {
+	width: 618px;
+	float: left;
+}
+
+.rimg .bbginputbutton {
+	width: 98px;
+	height: 29px;
+	margin: 0 22px 0 0;
+	_margin: 1px 22px 0 0;
+	_padding: 0 0 1px 0;
+	border: none;
+	cursor: pointer;
+}
+
+.rimg .rimgshow {
+	width: 614px;
+	margin: 15px 0;
+	padding: 1px;
+	border: 1px solid #bfdaf1;
+	float: left;
+}
+
+.imguphi {
+	width: 604px;
+	height: 22px;
+	padding: 0 0 0 10px;
+	background: #f0f8ff;
+	color: #f00;
+	line-height: 22px;
+	float: left;
+}
+
+.rimgdiv {
+	width: 584px;
+	padding: 18px 15px 4px 15px !important;
+	*padding: 18px 15px 14px 15px !important;
+	_padding: 18px 15px 14px 15px;
+	float: left;
+}
+
+.rimgli , .rimgparli {
+	width: 110px;
+	margin: 0 18px 18px 18px !important;
+	*margin: 0 14px 18px 14px !important;
+	_margin: 0 14px 18px 14px;
+	float: left;
+}
+
+.rimgli {
+	position: relative;
+}
+
+.rimgo {
+	width: 100px;
+	height: 75px;
+
+	padding: 4px;
+	border: 1px solid #999;
+}
+
+.rimgli .bbginputtext {
+	width: 75px;
+	margin: 4px 0 0 0;
+	background: #fff;
+	border: 1px solid #999;
+}
+
+.rimgli .bbginputbutton , .rimgparli .bbginputbuttonp {
+	width: 85px;
+	height: 18px;
+	padding: 1px 0 0 0;
+	_padding: 2px 0 0 0;
+	background: #d1e1ef url(http://static.szhome.com/market/images/bbgbuttonbg.gif) left top repeat-x;
+	border: 1px solid #ccc;
+	font-size: 11px;
+	float: left;
+	cursor: pointer;
+}
+
+.rimgli .bbginputbutton {
+	margin: 5px 0 0 2px !important;
+	*margin: 5px 0 0 -9px !important;
+	_margin: 5px 0 0 -9px;
+}
+
+.rimgli .bbginputbuttoncl {
+	width: 14px;
+	height: 14px;
+	margin: 7px 0 2px 6px;
+	background-position: 0 -982px;
+	border: none;
+	float: left;
+	cursor: pointer;
+}
+
+.rimgli .bbginputcheckbox {
+    width: 12px !important;
+    _width: 16px;
+	height: 12px !important;
+	_height: 16px;
+	margin: 7px 4px 0 22px !important;
+	_margin: 8px 4px 0 20px;
+}
+
+.rimgmov {
+	width: 100px;
+	margin: 0 5px;
+	position: absolute;
+	left: 0;
+	top: 57px;
+	z-index: 5;
+}
+
+.rimgmov .buttonl , .rimgmov .buttonr {
+	width: 21px;
+	height: 21px;
+	border: none;
+	cursor: pointer;
+}
+
+.rimgmov .buttonl {
+	background-position: 0 -1009px;
+}
+
+.rimgmov .buttonr {
+	margin: 0 0 0 58px;
+	background-position: 0 -1038px;
+}
+
+.rimg .rimgpar {
+	width: 614px;
+	margin: 5px 0 15px 0;
+	padding: 1px;
+	border: 1px solid #bfdaf1;
+	float: left;
+}
+
+.imgparuphi {
+	width: 604px;
+	height: 22px;
+	padding: 0 0 0 10px;
+	background: #f0f8ff;
+	color: #000;
+	line-height: 22px;
+	text-align: center;
+	float: left;
+}
+
+.rimgpardiv {
+	width: 604px;
+	height: 240px;
+	padding: 18px 5px 4px 5px !important;
+	*padding: 18px 5px 14px 5px !important;
+	_padding: 18px 5px 14px 5px;
+	overflow: auto;
+}
+
+.rimgparli .bbginputbuttonp {
+	margin: 8px 0 0 12px !important;
+	*margin: 8px 0 0 -1px !important;
+	_margin: 8px 0 0 -1px;
+}
+
+.rimg .rimglineshow {
+	float: left;
+}
+
+.rbutton .bbginputbutton {
+	width: 143px;
+	height: 34px;
+	margin: 10px 0 50px 33px;
+	_margin: 12px 0 50px 35px;
+	border: none;
+	cursor: pointer;
+	float:left;
+}
+
+.hint {
+	height: 17px;
+	margin: 5px 0 0 15px;
+	color: #777;
+	line-height: 17px;
+	float: left;
+}
+
+.hintr, .pass{
+	height: 17px;
+	margin: 5px 0 0 15px;
+	padding: 0 0 0 18px;
+	background-position: 0 -1071px;
+	color: #090;
+	line-height: 17px;
+	float: left;
+}
+
+.hintw, .error {
+	height: 17px;
+	margin: 5px 0 0 15px;
+	padding: 0 0 0 18px;
+	background-position: 0 -1095px;
+	color: #f00;
+	line-height: 17px;
+	float: left;
+}
+
+.prompt {
+	height: 17px;
+	margin: 5px 0 0 15px;
+	color: #777;
+	line-height: 17px;
+	float: left;
+	
+}
+
+.hintbr {
+	width: 763px;
+	margin: 0 0 0 105px;
+}
+
+.hintbr {
+	width: 763px;
+	margin: 0 0 0 105px;
+}
+
+.rlic label , .workma label {
+	margin: 0 10px 0 2px;
+}
+/*-2-2-*/
+/*-2-3-*/
+.bbgrincentre .work ul.whitebg {
+	padding: 5px 0;
+	background-color: #fff;
+	border: 1px solid #cfdded;
+}
+
+.bbgrincentre .work ul.whitebg li.mah {
+	width: 736px;
+	padding: 0 2px 0 6px;
+	border: 0;
+	line-height: 28px;
+}
+
+.sdcslide {
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	float: left;
+}
+.sdcslide li.slo {
+	width: 781px !important;
+	_width: 780px;
+	height: 8px !important;
+	_height: 2px;
+	margin: 0 0 15px 0 !important;
+	_margin: 0 -2px 0 0;
+	padding: 0;
+	border-right: 1px solid #E6EDF5;
+	border-left: 1px solid #E6EDF5;
+	float: left;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 11;
+}
+
+.sdcslide li.slo span {
+	width: 781px;
+	height: 8px !important;
+	_height: 6px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	background: #dff2fb;
+	border-bottom: 1px solid #E6EDF5;
+	position: relative;
+	left: 0;
+	top: 1px;
+	z-index: 12;
+}
+
+.sdcslide li.slt {
+	width: 140px !important;
+	_width: 134px;
+	height: 15px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	background: #dff2fb;
+	border-right: 1px solid #E6EDF5;
+	border-left: 1px solid #E6EDF5;
+	position: absolute !important;
+	top: 7px !important;
+	cursor: pointer;
+	_position: relative;
+	left: 312px;
+	_top: -1px;
+	z-index: 13;
+}
+
+.sdcslide li.slt .sdcsbuttonup , .sdcslide li.slt .sdcsbuttondown {
+	width: 85px;
+	height: 14px;
+	margin: 1px 0 0 0;
+	padding: 0 0 1px 55px;
+	float: left;
+	border-bottom: 1px solid #E6EDF5;
+	line-height: 14px;
+	position: relative;
+	left: 0;
+	top: -1px !important;
+	_top: 1px;
+	z-index: 14;
+}
+
+.sdcslide li.slt .sdcsbuttonup a , .sdcslide li.slt .sdcsbuttondown a {
+	padding-right: 5px;
+	font-weight: bold;
+	color: #2d8bd3;
+	letter-spacing: 4px;
+}
+.sdcslide li.slt .sdcsbuttonup a:hover , .sdcslide li.slt .sdcsbuttondown a:hover {
+	color: #f00;
+}
+
+
+.bbgrin .releasema {
+	height: 27px;
+	background: #e8f1f8;
+	border-bottom: 3px solid #bfe7f8;
+	_overflow: hidden;
+}
+
+.releasema .tag , .releaseml .tag {
+	float: left;
+}
+
+.releasema .searchtag_ac {
+	height: 31px;
+	padding: 0 16px 0 23px;
+	background-color: #bfe7f8;
+	font-size: 14px;
+	font-weight: bold;
+	color: #16315c;
+	line-height: 31px;
+	position: relative;
+	left: 0 !important;
+	top: -4px !important;
+	*left: 2px !important;
+	*top: -4px !important;
+	_left: 2px;
+	_top: -4px;
+	z-index: 5;
+}
+.releasema .searchtag_st {
+	height: 25px;
+	padding: 2px 11px 0 25px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 25px;
+	cursor: pointer;
+}
+
+.releasema .searchtag_st a {
+	color: #245daa;
+}
+.releasema .searchtag_st a:hover {
+	color: blue;
+}
+
+.remanum {
+	margin-left: 2px; 
+	font-size: 12px; 
+	font-weight: normal;
+}
+
+.bbgrin .workma {
+	width: 724px;
+	padding: 12px 32px 10px 25px !important;
+	*padding: 10px 32px 10px 25px !important;
+	_padding: 10px 32px 10px 25px;
+	background: #f2f7fa;
+	border-right: 1px solid #e6edf5;
+	border-bottom: 1px solid #e6edf5;
+	border-left: 1px solid #e6edf5;
+	color: blue;
+	line-height: 34px;
+	letter-spacing: 1px;
+	float: left;
+}
+
+.workma .bbginputtext {
+	_margin: 8px 0 0 0;
+	padding: 1px 4px 2px 4px;
+	background: #fff;
+	border: 1px solid #999;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.workma .bbginputoption {
+	background: #fff;
+}
+
+.workma .bbginputbutton {
+	height: 23px;
+	margin: 5px 15px 0 5px;
+	_margin: 5px 15px 0 5px;
+	padding: 0 13px 1px 14px !important;
+	*padding: 0 3px 1px 2px !important;
+	_padding: 1px 3px 0 4px;
+	background: #000 url(http://static.szhome.com/market/images/bbgbuttonbg.gif) left top repeat-x;
+	border: 1px solid #CCC !important;
+	*border: 1px solid #CCC !important;
+	_border: 1px solid #fff;
+	font-size: 12px;
+	line-height: 18px;
+	_line-height: 14px;
+	cursor: pointer;
+}
+
+.workma .cityspan {
+	_width: 380px;
+	_position: absolute; 
+	_top:40px; 
+	_right: 20px;
+	float: right;
+}
+
+.workmadiv {
+	margin: 12px 0 0 0;
+	padding: 12px 0 0 0;
+	border-top: 1px solid #b7d7f2;
+	line-height: 25px;
+}
+
+.workma .rli {
+	width: 67px; 
+	height: 40px;
+	line-height: 18px;
+	text-align: right;
+	float: left;
+}
+
+.workmadiv input {
+	float: left;
+}
+
+.workmadiv label {
+	margin-top: -2px !important;
+	margin-right: 22px;
+	float: left !important;
+	*margin-top: 0 !important;
+	*float: none !important;
+	_margin-top: 0;
+	_float: none;
+}
+
+.workmadiv .bbginputradio {
+	float: left !important;
+	*float: none !important;
+	_float: none;
+}
+
+.workmadiv .addwid {
+	margin-left: 93px;
+}
+
+.laimg {
+	display: inline-block;
+}
+.maduotu {
+	width: 27px;
+	height: 18px;
+	margin: 0 0 -2px 0;
+	padding: 0 0 0 4px;
+}
+.masuntu , .mashetu {
+	width: 21px;
+	height: 18px;
+	margin: 0 0 -2px 0;
+	padding: 0 0 0 4px;
+}
+
+.bgmalist {
+	float: left;
+}
+
+.bbgrin .releaseml {
+	height: 29px;
+	border-bottom: 3px solid #BFE7F8;
+	overflow: hidden;
+}
+
+.releaseml .searchtag_ac {
+	height: 26px;
+	padding: 3px 25px 0 25px;
+	background-color: #bfe7f8;
+	font-size: 14px;
+	font-weight: bold;
+	color: #16315c;
+	line-height: 27px;
+}
+
+.releaseml .searchtag_st {
+	height: 25px;
+	padding: 2px 11px 0 25px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 25px;
+	cursor: pointer;
+}
+
+
+
+
+.draftml {
+	height: 15px;
+	margin: 9px 5px 0 0;
+	padding: 0 0 0 20px;
+	float: right;
+}
+.draftml div a {
+	text-decoration: underline;
+}
+
+tr.mltoptr {
+	width: 782px;
+	height: 63px;
+	margin: 0 0 3px 0;
+	background: #f0f6fb;
+	border-color: #b6d6ee;
+	border-top: 1px solid #b6d6ee;
+	border-bottom: 1px solid #b6d6ee;
+	border-left: 1px solid #b6d6ee;
+	color: #272ebc;
+	text-align: center;
+}
+
+th.mltoptd {
+	padding: 5px 0 0 0;
+	border-right: 1px solid #e6edf5;
+	font-weight: normal;
+	line-height: 13px;
+}
+
+td .bbginputcheckbox {
+    width: 14px !important;
+    _width: 18px;
+	height: 14px !important;
+	_height: 18px;
+	margin: 1px 0 0 0;
+}
+
+tr.mltr {
+	width: 782px;
+	height: 107px;
+	background: #fff;
+	text-align: center;
+}
+
+td.mltd a {
+	color: #272ebc;
+}
+td.mltd a:hover {
+	color: #f80;
+}
+
+td.mltd a.refreshgr {
+	color: #093;
+	font-weight: bold;
+}
+td.mltd a.refreshgr:hover {
+	color: #f80;
+}
+
+td.mltdfa {
+	height: 105px;
+	border-bottom: 1px solid #b6d6ee;
+	border-right: 1px solid #e6edf5;
+	border-left: 1px solid #b6d6ee;
+	line-height: 22px;
+}
+
+td.mltdla {
+	height: 105px;
+	border-bottom: 1px solid #b6d6ee;
+	border-right: 1px solid #b6d6ee;
+	color: #999;
+	line-height: 22px;
+}
+
+span.refreshgr {
+	color: #093;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+span.refreshbl {
+	color: #999;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+.refreshgr {
+	color: #093;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+.refreshbl {
+	color: #999;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+.bbgrin .releasenum {
+    width: 782px;
+	height: 29px;
+	font-weight: bold;
+}
+
+.releasenum .allch {
+	height: 15px;
+	margin: 9px 5px 0 0;
+	padding: 0 0 0 20px;
+	color: #272ebc;
+	float: left;
+}
+
+.releasenum .draftml a {
+	color: #272ebc;
+	text-decoration: none;
+}
+.releasenum .draftml a:hover {
+	color: #f80;
+}
+
+.rbuttonml {
+	width: 782px;
+	padding: 0 0 0 45px;
+}
+
+.rbuttonml .bbginputbutton {
+	height: 31px;
+	margin: 18px 0 10px 23px;
+	_margin: 20px 0 50px 25px;
+	border: none;
+	cursor: pointer;
+}
+/*------------弹出-------------*/
+#basic-modal-content {
+	display: none;
+}
+
+/* Overlay */
+#simplemodal-overlay {
+	background-color: #999; 
+	cursor: wait;
+}
+
+#basic-modal-content p {
+	color: #000;
+	font-size: 14px;
+}
+
+/* Container */
+#simplemodal-container {
+	height: 550px; 
+	width: 750px; 
+	padding: 12px;
+	background-color: #fff;
+	border: 3px solid #2a8ad4;  
+}
+#simplemodal-container a.modalCloseImg {
+	width: 37px; 
+	height: 37px; 
+	background: url(http://static.szhome.com/market/images/notice-close.png) no-repeat; 
+	display: inline; 
+	position: absolute; 
+	top :-15px; 
+	right: -16px; 
+	z-index: 3200; 
+	cursor: pointer;
+}
+#simplemodal-container h3 {
+	font-size: 30px;
+	color: #f00;
+	line-height: 42px;
+	text-align: center;
+}
+#simplemodal-container .foot {
+	width: 200px;
+	margin: 0 10px 0 0;
+	float: right;
+}
+#simplemodal-container .foot p {
+	font-size: 12px;
+	color: #000;
+	text-align: center;}
+/*-
+#simplemodal-container .simplemodal-data {padding: 8px;}
+#simplemodal-container code {margin-bottom: 12px;padding: 4px 6px 6px 6px;background: #141414; border-left: 3px solid #65B43D; display: block; color: #bbb; font-size: 12px;  }
+#simplemodal-container a {color: #ddd;}
+
+/*------------弹出-------------*/
+.clickblock { width: 620px;height: 340px;padding: 0 0 10px 0;background: #edf8ff;border: 3px solid #b6d6ee;overflow: hidden;}
+.close-link {width: 15px;height: 15px;margin: 7px 5px 0 0;display: block;float: right;}
+.lblhouse {font-size: 14px;line-height: 22px;list-style: none;float: left;}
+.lbltitle {margin: 0 auto; color: #f00;}
+.lbltext {margin: 0 auto;color: #000;}
+.chartcl { width: 620px;margin: 5px 0; float: left;}
+.clickpressl, .clickpressr {width: 100px;height: 31px;  padding: 0 10px;font-size: 14px;line-height: 31px;}
+.clickpressl {margin: 0 35px 0 155px;float: left;}
+.clickpressr {margin: 0 155px 0 35px;float: right;}
+.chartcl a { background: #2a8ad4;color: #fff;text-decoration: none;}
+.chartcl a:hover { background: #8bd7f9;color: #112954;text-decoration: none;}
+.chartblock {margin: 3px 10px 6px 10px;float: right;}
+/*-------------------------*/
+.clickblockre { width: 590px;padding: 0 0 10px 0;border: 3px solid #b6d6ee;overflow: hidden;background: #fff;}
+.clickpressle, .clickpressre { padding: 0 20px;height: 22px;font-size: 12px;line-height: 22px;}
+.clickpressle {margin: 5px 0px 0 230px;float: left;}
+.clickpressre {margin: 5px 210px 0 0;float: right;}
+.popretablediv {margin: 3px 0 0 8px;border: 1px solid #9FC3F6;overflow-x: hidden;overflow-y: auto; float: left;}
+.popretrtop {height: 20px !important;*height: 22px !important;_height: 22px;background: #edf8ff;border-bottom: 1px solid #9fc3f6;font-size: 12px;font-weight: bold;line-height: 20px;}
+.popretr , .popretrd {height: 17px !important;*height: 19px !important;_height: 19px;font-size: 12px;line-height: 18px;}
+.popretr {background: #fff;}
+.popretrd {background: #f4fafe;}
+.popreul {margin: 18px 0 0 16px !important;*margin: 18px 0 0 12px !important;_margin: 18px 0 0 12px;float: left;color: #666;line-height: 22px;text-align: left;}
+.popredli {padding: 0 0 0 18px;background-position: 0 -773px;font-weight: bold; color: #f00;}
+.popli {padding: 0 0 0 18px;color: #666;}
+td.mltd{ height: 105px;border-bottom: 1px solid #b6d6ee;border-right: 1px solid #e6edf5;line-height: 22px;}
+th.mltoptd{padding: 5px 0 0 0;border-left: 1px solid #e6edf5;border-right: 1px solid #e6edf5;
+ line-height: 13px; border-top: none;border-bottom: 1px solid #e6edf5;}
+.rbuttonms .bbginputbutton {width: 46px;height: 26px;margin: 0 0 0 120px;_margin: 0 0 -5px 122px;border: none;position: relative;left: 0;top: -3px;cursor: pointer;}
+.rbuttonms table {float: left;}
+.bbgshops {width: 721px;margin: 35px 15px 0 15px;padding: 8px 15px;background: #f2f7fa;border: 1px solid #e6edf5;float: left;}
+
+/*ad*/
+.jjr_infor{ float:left; padding:4px; border:1px solid #bbcde5;width:270px; overflow:hidden; margin-top:8px; margin-right:8px;}
+.jjr_infor img{ float:left; margin-right:6px; width:90px; height:120px; border:1px solid #CCC; overflow:hidden; }
+.jjr_tab{border:1px solid #CCC; width:485px; border-collapse:collapse; text-align:center;margin:8px 0; }
+.jjr_tab td{border:1px solid #CCC;}
+.jjr_tab .tdbag{ background:#def3ff; font-weight:bold;}
+.right{ float:right; display:inline;}
+
+.plbutton_01{width:113px;height:31px;background-position:0 -490px;margin-left: 22px;margin-right: 25px; border:none;}
+.plbutton_02{width:113px;height:31px;background-position:-117px -490px;margin-right:25px;border:none;}
+.plbutton_03{width:81px;height:32px;background-position:-236px -490px;border:none;}
+.plbutton_04{width:141px;height:31px;background-position:-149px -527px;border:none;}
+
+/*2017.1.4*/
+.fbsp-div{ float:left; width:300px; height:30px; overflow:hidden; }
+.fbsp-div li{width:130px;height: 30px;margin: 0 2px 0 2px;background-color: #235eaa;color:#FFF; display:block; float:left; margin-right:3px; text-align:center; line-height:30px;}
+.cgxgl-div{ width:483px; float:right;height:30px; overflow:hidden;}
+.cgxgl-div li{width:110px;height: 30px;margin: 0 2px 0 2px;background-color: #039de5;color:#FFF; display:block; float:right;margin-left:3px; text-align:center; line-height:30px; f}
+.releaseml .up { background: #2a8ad4;color: #FFF;}
+.bbgrin .fangyuan-b{ border:0;}
+.fangyuan-b .searchtag_ac{line-height:25px; }

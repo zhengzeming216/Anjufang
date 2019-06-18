@@ -1,0 +1,308 @@
+﻿@charset "utf-8"
+/* CSS Document */
+/*-------------------------------------
+	css for www.szhome.com 
+	design by ZhaoQian-L
+	UED\Web Page Design\HTML+CSS+js
+	date 2011-8-23
+----------------------------------------*/
+
+}
+
+body {
+   
+	padding: 0;
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 170%;
+
+}
+
+div {
+    margin: 0;
+	padding: 0;
+}
+
+ul {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+
+img {
+ 
+	border: none;  
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+a.line {
+    text-decoration: none;
+}
+a.line:hover {
+    text-decoration: underline;
+}
+
+
+.clean {
+    clear: both;
+}
+
+.bigdiv {
+    width: 960px;
+    margin: 0 auto;
+	padding: 0;
+	background:#FFF;
+}
+
+.toptel , .toptel span.telnumimg {
+	background:url(http://static.szhome.com/market/images/market-szhome-image.gif) no-repeat;
+}
+/*-----------------top-----------------*/
+
+.alltoptag {
+  background:#FFF;
+    width: 960px;
+	height: 63px;
+	margin: 2px auto 8px auto;
+	padding: 0;
+}
+
+.toptag {
+    width: 959px;
+	height: 31px;
+	background: #2a8ad3;
+	border-top: 1px #ccc solid;
+	border-right: 1px #ccc solid;
+	line-height: 31px;
+}
+
+.toptag a {
+    padding: 2px 19px;
+	border-right: 1px #57bded solid;
+    color: #fff;
+}
+.toptag a:visited  {
+    color: #fff;
+}
+.toptag a:hover  {
+    color: #ff9;
+}
+
+a.market {
+    padding: 2px 19px;
+	border-right: 1px #57bded solid;
+    color: #fbdb00;
+}
+a.market:hover {
+    color: #fbdb00;
+}
+
+.toplogin {
+    width: 960px;
+	height: 31px;
+	background: url(http://static.szhome.com/market/images/toptagb.gif) bottom left repeat-x;
+}
+.toploginc {
+    width: 958px;
+	height: 27px;
+	background: #efeff0;
+	border-left: 1px #ccc solid;
+	border-right: 1px #ccc solid;
+	line-height: 27px;
+}
+
+a.red {
+    color: #225ea9;
+}
+a.red:visited {
+    color: #225ea9;
+}
+a.red:hover {
+    color: #f00;
+}
+
+a.shweibo {
+	padding: 1px 25px 0 8px;
+	background: url(http://static.szhome.com/market/images/sinawb.gif) right 3px no-repeat;
+	display: inline-block;
+    color: #C00;
+	font-weight: bold;
+}
+a.shweibo:visited {
+    color: #C00;
+}
+a.shweibo:hover {
+    color: #f00;
+}
+
+
+a.fav {
+    padding: 0 10px 0 0;
+	border-right: 1px #8ddbf2 solid;
+    color: #225ea9;
+}
+a.fav:visited {
+    color: #225ea9;
+}
+a.fav:hover {
+    color: #399fd5;
+}
+
+.toptel {
+    width: 440px;
+	height: 27px;
+	margin: 0;
+	padding: 0 0 0 46px;
+	background-position: top left;
+	float: right;
+	overflow: hidden;
+}
+.toptel span.word {
+    width: 440px;
+	height: 19px;
+	margin: 2px 0;
+	padding: 0 0 4px 0;
+	background: #3ab6ff;
+	float: right;
+	color: #fff;
+	line-height: 19px;
+	overflow: hidden;
+}
+
+span.telnum {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 23px;
+	color: #ff0;
+	float: none;
+}
+ 
+.toptel span.telnumimg {
+	width: 127px;
+	height: 18px;
+	margin: 1px 0 -2px 0;
+	background-position: 0 -87px;
+	float: none;
+	display: inline-block;
+}
+
+.alltoplogo {
+    width: 960px;
+	height: 70px;
+	margin: 0 auto 9px auto;
+	padding: 0;
+	background:#FFF;
+}
+/*-----------------footer-----------------*/
+
+.footer
+{  background:#FFF;
+	width: 960px;
+	margin: 8px auto 0 auto;
+	padding: 5px 0 10px 0;
+	background-color: #F5F5F5;
+	border-top: 2px solid #2a8ad3;
+	font-family: Arial, 宋体;
+	font-size: 12px;
+	color: #225ea9;
+	line-height: 175%;
+	text-align: center;
+}
+
+.red {
+	color: #f00;
+}
+
+.red a {
+	color: #f00;
+	text-decoration: none;
+}
+.red a:hover {
+	color: #f00;
+	text-decoration: underline;
+}
+
+.notshow {
+	 display:none;
+}
+/* AutoComplete item */
+
+.autocomplete_completionListElement
+{
+	visibility: hidden;
+	margin: 0px !important;
+	background-color: inherit;
+	color: windowtext;
+	border: buttonshadow;
+	border-width: 1px;
+	border-style: solid;
+	cursor: 'default';
+	overflow: auto;
+	text-align: left;
+	list-style-type: none;
+	font-size: 14px;
+	z-index:100;
+	_z-index:100;
+}
+
+.autocomplete_highlightedListItem
+{
+	background-color: #0033CC;
+	color: #FFFFFF;
+	padding: 3px;
+	display: block;
+	line-height: 14px;
+}
+
+.autocomplete_listItem
+{
+	background-color: #FFFFFF;
+	padding: 3px;
+	display: block;
+	line-height: 14px;
+}
+/* AutoComplete end */
+
+.ListManageHeader
+{
+	background-color: #F2F9FB;
+}
+.ListManageHeader th
+{
+	padding: 2px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #003399;
+	border-bottom-style: solid;
+	border-bottom-color: #AFCFEF;
+	border-bottom-width: 1px;
+}
+
+/*system*/
+.systemTipconten{margin:25px auto;border:1px solid #f78e00; padding:30px 20px 30px 30px; font-size:14px; width:360px;overflow:hidden;}
+.systemTipconten .text{overflow:hidden;}
+.h125{ height:125px;}
+.systemTipconten p{ margin-bottom:10px;}
+.systemTipconten img{ float:left; margin-right:10px;}
+.contenter
+{
+	width:960px;
+	margin:0 auto;
+	background:#fff;
+	overflow:hidden;
+}
+
+.fcodeall{text-align:center; margin:30px auto; line-height:35px; }

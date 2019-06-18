@@ -1,0 +1,248 @@
+﻿@using Common;
+@using Entity;
+@using BLL;
+@{
+    ViewBag.Title = "深圳安居房轮候排名查询系统_深圳安居房";
+    ViewBag.Keywords = "安居房轮候查询,安居房排名,深圳安居房";
+    ViewBag.Description = "【实时更新】提供实时更新数据、智能的深圳安居房轮候(包括首次轮候和日常轮候)总排名及对应申请房型的实时排名查询，支持姓名、身份证号码或备案回执号任一项的智能模糊匹配搜索。--深圳安居房";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string strUrl = "/ajpm/{0}-{1}-{2}-{3}-{4}-{5}";
+    int waitingType = ViewBag.waitingType;
+    int SearchType = ViewBag.SearchType;
+    int FamilyCount = ViewBag.FamilyCount;
+    int FamilyType = ViewBag.FamilyType;
+    int FamilyHouse = ViewBag.FamilyHouse;
+    string SearchKey = ViewBag.SearchKey;
+
+    int pageIndex = ViewBag.Pages;
+    int pageSize = ViewBag.Pagesize;
+    int pCount = ViewBag.Count;
+    string linkHref = string.Format("/ajpm/__id__-{0}-{1}-{2}-{3}-{4}", SearchType, FamilyCount, FamilyType, FamilyHouse, waitingType) + (string.IsNullOrEmpty(SearchKey) ? "" : "?search=" + HttpUtility.UrlEncode(SearchKey));
+}
+@section Css{
+    <link href="~/content/css/search.css?v=2018020201" rel="stylesheet" />
+    <style type="text/css">
+        .lh-popwindow-fix {
+            position: fixed;
+            margin: 0 auto;
+        }
+
+        .lh-popwindow {
+            width: 870px;
+            background: #fff;
+            overflow: hidden;
+        }
+    </style>
+}
+<div class="wrap path fix"></div>
+<!--路径-->
+<div class="wrap bg-white fix" style="margin:0 auto 20px auto">
+    @*@Html.Action("WaitingNavigation", "UserControls", new { WaitingType = (int)Enums.eWaitingNavigation.安居房轮候 })*@
+    <div class="search">
+        <div class="sort-header fix">
+            <h1>
+                深圳市安居房轮候库排名查询系统
+            </h1>
+            <h2>
+                数据更新时间：@Anju_AJFWaitinglistBLL.LastDate
+            </h2>
+            @Html.Action("WaitingSearch", "UserControls", new { SearchKey = SearchKey })
+        </div>
+        <div class="anju-lh-searchTab b-b-dc mb30">
+            <dl class="fix">
+                <dt>轮候类型：</dt>
+                <dd>
+                    <a class="@(waitingType == 0 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, FamilyCount, FamilyType, FamilyHouse >= 10 ? 1 : FamilyHouse, 0))" title="不限">不限</a>
+                    <a class="@(waitingType == 1 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, FamilyCount, FamilyType, FamilyHouse >= 10 ? 1 : FamilyHouse, 1))" title="首次轮候">首次轮候</a>
+                    <a class="@(waitingType == 2 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, FamilyCount, FamilyType, FamilyHouse >= 10 ? 1 : FamilyHouse, 2))" title="日常轮候">日常轮候</a>
+                </dd>
+            </dl>
+            <dl class="fix">
+                <dt>家庭人数：</dt>
+                <dd>
+                    <a class="@(FamilyCount == 0 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, 0, FamilyType, FamilyHouse >= 10 ? 1 : FamilyHouse, waitingType))" title="不限">不限</a>
+                    <a class="@(FamilyCount == 1 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, 1, FamilyType, FamilyHouse >= 10 ? 1 : FamilyHouse, waitingType))" title="1~3人(两房一厅)">1~3人(两房一厅)</a>
+                    <a class="@(FamilyCount == 2 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, 2, FamilyType, FamilyHouse >= 10 ? 1 : FamilyHouse, waitingType))" title="4人及以上(三房一厅)">4人及以上(三房一厅)</a>
+                </dd>
+            </dl>
+            <dl class="fix">
+                <dt>特殊家庭：</dt>
+                <dd>
+                    <a class="@(FamilyType == 0 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, FamilyCount, 0, FamilyHouse >= 10 ? 1 : FamilyHouse, waitingType))" title="不限">不限</a>
+                    <a class="@(FamilyType == 1 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, FamilyCount, 1, FamilyHouse >= 10 ? 1 : FamilyHouse, waitingType))" title="残疾人家庭">残疾人家庭</a>
+                    <a class="@(FamilyType == 2 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, FamilyCount, 2, FamilyHouse >= 10 ? 1 : FamilyHouse, waitingType))" title="抚恤定补家庭">抚恤定补家庭</a>
+                    <a class="@(FamilyType == 3 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, FamilyCount, 3, FamilyHouse >= 10 ? 1 : FamilyHouse, waitingType))" title="人才家庭">人才家庭</a>
+                </dd>
+            </dl>
+            <dl class="fix">
+                <dt>未选房家庭：</dt>
+                <dd>
+                    <a class="@(FamilyHouse == 1 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, 0, FamilyType, 1, waitingType))" title="">不限</a>
+                    <a class="@(FamilyHouse == 2 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, 0, FamilyType, 2, waitingType))" title="">弃选一次</a>
+                    <a class="@(FamilyHouse == 3 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, 0, FamilyType, 3, waitingType))" title="">弃选两次</a>
+                    <a class="@(FamilyHouse == 4 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, 0, FamilyType, 4, waitingType))" title="">弃选三次</a>
+                    <a class="@(FamilyHouse == 5 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, 0, FamilyType, 5, waitingType))" title="">弃签一次</a>
+                    <a class="@(FamilyHouse == 6 ? "active" : "")" href="@(string.Format(strUrl, 1, 0, 0, FamilyType, 6, waitingType))" title="">弃签两次</a>
+                </dd>
+            </dl>
+
+            @*<dl class="fix">
+                <dt>已选房家庭：</dt>
+                <dd>
+                    <a class="@(FamilyHouse == 10 ? "active" : "")" href="@(string.Format(strUrl, 0, 1, 0, 0, 10, 0))">不限</a>
+                    @{
+                        foreach (Enums.eAJFProject item in Enum.GetValues(typeof(Enums.eAJFProject)))
+                        {
+                            <a class="@(FamilyHouse == (int)item ? "active" : "")" href="@(string.Format(strUrl, 0, 1, 0, 0, (int)item, 0))" title="@(item.ToString())">@item.ToString()</a>
+                        }
+                    }
+                </dd>
+            </dl>*@
+        </div>
+        <table class="sort-tab">
+            <tbody>
+                <tr>
+                    @{
+                        if (FamilyHouse < 10)
+                        {
+                            <th>实时<br>排位</th>
+                            <th>
+                                @Html.Raw(Anju_AJFWaitinglistBLL.GetStrPMTitle(FamilyType))
+                            </th>
+                            <th>备案回执号</th>
+                            <th>申请人</th>
+                            <th>身份证号码</th>
+                            @Html.Raw(FamilyType > 0 ? "<th class=\"w115\">" + ((Enums.eFamilyType)FamilyType).ToString() + "</th>" : "<th class=\"w115\">特殊家庭</th>")
+                            <th>获得深户时间</th>
+                            <th>在深首次<br>缴社保时间</th>
+                            <th>备注</th>
+                        }
+                        else
+                        {
+                            //已选房家庭
+                            <th>备案回执号</th>
+                            <th>申请人</th>
+                            <th>身份证号码</th>
+                            <th>选择楼盘</th>
+                            <th>户型</th>
+                            <th>面积</th>
+                        }
+                    }
+                </tr>
+                <tr></tr>
+                @{
+                    if (FamilyHouse < 10)
+                    {
+                        List<Anju_AJFWaitinglistEntity> List = ViewBag.List;
+                        foreach (Anju_AJFWaitinglistEntity item in List)
+                        {
+                            <tr>
+                                <td>@item.Range</td>
+                                <td>
+                                    @Html.Raw(Anju_AJFWaitinglistBLL.GetStrPM(item))
+                                </td>
+                                <td><a href="javascript:void(0);" style="color: #1475cf;" title="点击查看轮候库信息" onclick="showFamily(@item.Id);">@item.BGNo</a></td>
+                                <td>
+                                    @item.Name
+                                </td>
+                                <td>
+                                    @item.IDCardNo
+                                </td>
+                                <td>
+                                    @item.OtherInformation
+                                </td>
+                                <td>@(item.SZRPRTime.HasValue ? item.SZRPRTime.Value.ToString("yyyy年MM月dd日") : "")</td>
+                                <td>@item.SZSSCCY</td>
+                                <td>
+                                    @Html.Raw(item.GiveupSelectNum > 0 ? "放弃选房" + item.GiveupSelectNum + "次<br/>" : "")
+                                    @(item.GiveupContractNum > 0 ? "放弃签约" + item.GiveupContractNum + "次" : "")
+                                </td>
+                            </tr>
+                        }
+                        if (List.Count == 0)
+                        {
+                            <tr>
+                                <td colspan="9"><span style="font-size:24px;">很抱歉，未能找到符合条件的申请人。</span></td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        //已选房家庭
+                        //List<Anju_AJFHouseResultEntity> listResult = ViewBag.listResult;
+                        @*foreach (Anju_AJFHouseResultEntity item in listResult)
+                        {
+                            <tr>
+                                <td>@item.BGNo</td>
+                                <td>@item.Name</td>
+                                <td>@item.IDCardNo</td>
+                                <td>@item.SelectProject</td>
+                                <td>@item.SelectRoom</td>
+                                <td>@item.RoomArea</td>
+                            </tr>
+                        }*@
+                        @*if (listResult.Count == 0)
+                        {
+                            <tr>
+                                <td colspan="6"><span style="font-size:24px;">很抱歉，未能找到符合条件的申请人。</span></td>
+                            </tr>
+                        }*@
+                    }
+                }
+            </tbody>
+        </table>
+        <div class="fix pagebox" style="margin:20px 0;">
+            <div class="page right">
+                <div class="pages pagehtml">
+                    @Html.Raw(Html.Pager(2, 7, pageSize, pCount, pageIndex, linkHref, "首页", "上一页", "下一页", "尾页"))
+                </div>
+            </div>
+        </div>
+        <div class="sort-tips">
+            <p>
+                <b class="orange">注1：</b>最终排名以住建局公布为准！
+            </p>
+            <p>
+                <b class="orange">注2：</b>2018年10月1日以后入库的小伙伴，请勿着急，您的名单正在积极审核，请留意本网排名变化！
+            </p>
+        </div>
+    </div>
+</div>
+
+
+@section Js{
+
+    <script type="text/javascript">
+        function SelectType(Name) {
+            $(".sele-menu-sup li").show();
+            $("#SelectSpan").html($(Name).html()).attr("TypeId", $(Name).attr("TypeId"));
+            $("#txtSearchkey").attr("placeholder", $(Name).attr("data"));
+            $(Name).hide();
+        }
+
+        function Search() {
+            SearchKey = $("#txtSearchkey").val();
+            SearchType = $("#SelectSpan").attr("TypeId");
+            if (SearchKey != "") {
+                SearchKey = "?key=" + encodeURIComponent(SearchKey);
+            }
+            location.href = "/ajpm/1-" + SearchType + "-@(FamilyCount)-@(FamilyType)-@(FamilyHouse)-@(waitingType)" + SearchKey;
+        }
+
+        function showFamily(id) {
+            click = 1;
+            layer.closeAll();
+            layer.open({
+                type: 2,
+                title: false,
+                area: ['870px', '710px'],
+                fixed: false, //不固定
+                maxmin: false,
+                closeBtn: false,
+                shadeClose: true,
+                content: ['/ajpm/family/' + id, 'no']
+            });
+        }
+    </script>
+}

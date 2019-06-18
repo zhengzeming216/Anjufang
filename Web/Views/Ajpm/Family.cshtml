@@ -1,0 +1,82 @@
+﻿@using Entity;
+
+@{
+    Layout = null;
+    Anju_AJFWaitinglistEntity entity = ViewBag.entity;
+    List<Anju_AJFWaitinglistEntity> List = ViewBag.List;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@(entity.BGNo)轮候库信息</title>
+    <link href="/content/css/newhouse-base.css" rel="stylesheet" />
+    <link href="/content/css/newhouse-marster.css" rel="stylesheet" />
+    <link href="/content/css/search.css?v=2018020101" rel="stylesheet" />
+</head>
+<body style="background:#ffffff">
+    <div class="lh-popwindow-fix lh-popwindow">
+        <h2>安居房轮候库查询结果<a href="javascript:colseFamily();" class="right wind-x"></a></h2>
+        <div class="popwindcont" style="height: 620px;overflow-y:auto;">
+            <h3>申请表信息</h3>
+            <table class="wind-tab">
+                <tbody>
+                    <tr><th style="width:20%;">备案回执号</th><th style="width:20%;">市轮候排位</th><th>认购情况</th><th>备注</th></tr>
+                    <tr>
+                        <td>@entity.BGNo</td>
+                        <td>@entity.Range</td>
+                        <td>@(entity.GiveupSelectNum > 0 ? "放弃选房" + entity.GiveupSelectNum + "次 " : "")@(entity.GiveupContractNum > 0 ? "放弃签约" + entity.GiveupContractNum + "次 " : "")</td>
+                        <td>@entity.Remarks</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>申请人信息</h3>
+            <table class="wind-tab">
+                <tbody>
+                    <tr><th>姓名</th><th>身份证号码</th><th>户籍所在地</th><th>入户时间</th><th>首次缴纳社保时间</th><th style="width:15%;">其他</th></tr>
+                    <tr>
+                        <td>@entity.Name</td>
+                        <td>@entity.IDCardNo</td>
+                        <td>@entity.XZQ</td>
+                        <td>@(entity.SZRPRTime.HasValue ? entity.SZRPRTime.Value.ToString("yyyy年MM月dd日") : "")</td>
+                        <td>@entity.SZSSCCY</td>
+                        <td>@entity.OtherInformation</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            @{
+                if (List.Count > 0)
+                {
+                    <h3>家庭成员信息</h3>
+                    <table class="wind-tab">
+                        <tbody>
+                            <tr><th>姓名</th><th>身份证号码</th><th>入户时间</th> <th style="width:30%;">其他</th></tr>
+                            @{
+                                foreach (Anju_AJFWaitinglistEntity item in List)
+                                {
+                                    <tr>                                        
+                                        <td>@item.Name</td>
+                                        <td>@item.IDCardNo</td>
+                                        <td>@(item.SZRPRTime.HasValue ? item.SZRPRTime.Value.ToString("yyyy年MM月dd日") : "")</td>
+                                        <td>@item.OtherInformation</td>
+                                    </tr>
+                                }
+                            }                            
+                        </tbody>
+                    </table>
+                                }
+            }
+        </div>
+    </div>
+</body>
+</html>
+<script src="~/Content/js/lib/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+    function colseFamily() {
+        parent.layer.closeAll();
+    }
+</script>

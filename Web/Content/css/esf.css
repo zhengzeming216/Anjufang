@@ -1,0 +1,98 @@
+﻿/*Updated:2017.07.17
+------------------------*/
+@charset "utf-8";
+/*--*/
+.esf-detail-header{ padding:0 20px 28px 55px;}
+.esf-detail-title{ padding-top:28px;}
+.esf-detail-title h1{ font-size:28px;}
+.esf-detail-focus,.esf-detail-focus .ad-gallery .ad-image-wrapper{ width:645px;}
+.esf-detail-focus .ad-gallery .ad-image-wrapper{ height:430px; margin-bottom:15px;}
+.esf-detail-focus .ad-gallery .ad-thumbs li{padding-right:10px;}
+.esf-detail-focus .ad-gallery .ad-nav { margin: 0 0 0 -28px;}
+.esf-detail-info{ width:425px;}
+.esf-info-box{ padding:26px 0; line-height:23px;}
+.esf-info-box ul li{ float:left;}
+.esf-info-box ul li.one{width:165px;}
+.cz ul li.one{width:204px;}
+.esf-info-box ul li.two{width:154px;}
+.cz ul li.two{width:87px; margin-top:40px;}
+.esf-info-box ul li.three{ width:95px;margin-top:40px;}
+.cz  ul li.three{ width:120px;}
+.jlr-info{ padding-bottom:0; padding-top:30px;}
+.jlr-info img,.dianpuLeft img{ width:100px; height:100px; margin-right:20px; float:left;}
+.dpa{ line-height:20px; display: inline-block; padding:0 15px; border:1px solid #dcdddd; border-radius:4px; margin-left:12px; position:relative;top:-2px;}
+.qytjList{ margin-right:-35px; overflow:hidden;}
+.qytjList ul li{ width:256px; height:170px;margin: 0 20px 20px 0; }
+.qytjList ul li,.esf-fy li{ overflow:hidden; float:left; position:relative;}
+.qytjList ul li a,.esf-fy li a{ display:block;}
+.qytjList ul li img,.esf-fy li img{ width:100%; -webkit-transition:-webkit-transform .5s ease-in-out;-moz-transition:-moz-transform .5s ease-in-out;-o-transition:-o-transform .5s ease-in-out;transition:transform .5s ease-in-out; }
+.qytjList ul li img{height:170px;}
+.qytjList ul li:hover img,.esf-fy li:hover img{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(0.757);-o-transform:scale(1.1);transform:scale(1.1)}
+.qytjList ul li .txtbox {bottom: 0px;}
+.qytjList ul li .txtbox p { margin-left: 16px;}
+.cloum2{ padding:8px 53px 30px 53px}
+.ptbox{ width: 385px;}
+.ptTab li a {width: 77px}
+.esf-titelbbox h3{ padding:20px 0 30px 0; font-size:24px; color:#4a4d5c;}
+.esf-fy { margin-right:-20px; overflow:hidden;}
+.esf-fy li{width:533px; margin:0 19px 20px 0;}
+.esf-fy li img{ height:355px;}
+.esf-fy .txtbox{ width:63px; height:32px; line-height:32px; text-align:center;} 
+.esf-cloum{ width:700px;}
+.xiaoqu{padding:0 25px 30px 53px;}
+.xiaoqu ul{ width:395px;}
+.xiaoqu ul li,.otherinfo{ line-height:34px;}
+.xiaoqu ul li em{ display:inline-block; width:80px; color:#808080;}
+.xiaoqu ul li.co2{ width:50%; float:left;}
+.xiaoqu-img{ width:220px; height:146px; margin-top:51px;}
+.esf-yz{ position:absolute;top:20px;right:215px;}
+.esf-cjList{ padding-bottom:14px; margin-bottom:14px; border-bottom:1px solid #e6e6e6;}
+.esf-cjList li{ float:left; line-height:25px;}
+.esf-cjList li.one{ width:260px;}
+.esf-cjList li.two{ width:254px;}
+.esf-cjList li.three{ width:80px;}
+.esf-fyms dl{ margin-bottom:27px; line-height:26px;}
+.esf-fyms dl dt{ font-weight:bold;}
+.esf-share{ width:85px; cursor:pointer;}
+.shareUpox{position:absolute;top:15px; left:-80px; padding-top:16px; display:none;}
+.shareUp{  width:207px;line-height:20px; padding:8px 12px; border-radius:6px; border:1px solid #dedede; box-shadow:2px 2px 3px #e2e2e2;}
+.esf-share:hover .shareUpox{ display:block;}
+.shareUp .poptip-arrow em{ color:#dedede;}
+.shareUp .poptip-arrow-top {top: 8px;}
+.shareUp .poptip-arrow-top { left: 109px;}
+.shareUp a{width:20px;height:20px; margin-left:10px; vertical-align:middle;}
+.shareUp a.wb{background-position:-2px -179px;}
+.shareUp a.douban{background-position:-32px -179px;}
+.shareUp a.qqkj{background-position:-62px -179px;}
+.shareUp a.wx{background-position:-92px -179px;}
+.shareUp a.baidu{background-position:-122px -179px;}
+/*dianpu*/
+.dianpuheader{ height:246px; background:url(../images/dianpuheader.jpg) center no-repeat;}
+.dianpuheaderCont{ color:#fff;}
+.dianpuLeft{ margin:74px 0 0 40px;}
+.dianpuLeft .text{ padding-top:22px;}
+.dianpuRight{ width:390px;height:246px;}
+.dianpuRight .text{ padding:14px 50px ;}
+.dianpuRight .text dl{ line-height:29px; position:relative; padding-left:72px;}
+.dianpuRight .text dl dt{ position:absolute;left:0;top:0; width:72px;}
+.dianpuTel{ border-top:1px solid #565a75; padding-top:15px; margin-top:10px;}
+.dianpuTab li{ position:relative; float:left; cursor:pointer;}
+.dianpuTab a{ padding-bottom:20px; color:#4a4d5c;display:inline-block; height:24px; line-height:24px;margin-right:30px; }
+.dianpuTab li span{ display:none;}
+.dianpuTab li.active a{ font-weight:bold;}
+.dianpuTab li:hover span,.dianpuTab li.active span{ display:block; width:60px; height:40px; border-bottom:4px solid #141541; position:absolute;top:0;left:10px;}
+
+/*弹出窗口*/
+.popbox{overflow:hidden; position:fixed;top:30%; left:50%; z-index:9999; color:#483a32; margin-left:-195px;}
+.popbox .tit{position:relative; line-height:34px; background:#f8f8f8; padding-left:10px;}
+.popbox .close{ display:block; position:absolute; right:12px; top:12px;width:11px;height:11px;background-position:-111px -114px;}
+.msg{ padding:15px 25px;}
+.popbox dl{ clear:both;  margin-bottom:18px; line-height:30px; overflow:hidden;}
+.popbox dt,.popbox dd{ float:left;}
+.popbox dt{ width:85px; text-align:right; margin-right:15px;}
+.popbox input[type="radio"]{ margin-right:5px;}
+.popbox input[type="text"],textarea{ border:1px solid #e3e3e3; text-indent:0.25rem;}
+.popbox textarea{ width:268px; height:92px; padding-top:6px;}
+.popbox input[type="text"]{ height:28px; line-height:28px; width:268px;}
+.popbox button{ width:60px; height:26px; text-align:center; line-height:26px; color:#fff; border:none; cursor:pointer; border-radius:4px;}
+.popbox .bottom{ text-align:center;}

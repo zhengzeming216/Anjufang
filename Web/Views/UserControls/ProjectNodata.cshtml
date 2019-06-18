@@ -1,0 +1,12 @@
+﻿@{
+    int bbsProjectID = ViewBag.bbsProjectID;//论坛ID
+    string bbsUrl = bbsProjectID > 0 ? "http://bbs.szhome.com/" + bbsProjectID + ".html" : "http://bbs.szhome.com/";
+    Layout = null;
+}
+
+<div class="wrap fix ta-c  bg-white" style="margin:20px auto;">
+    <img src="/Content/images/nodatepic.png" alt="暂无内容">
+    <p class="f-yh f14" style="margin-bottom:20%;">
+        暂时没有内容，去<a href="@(bbsUrl)" target="_blank" title="楼盘圈子" style="border:1px solid #1475cf; color:#1475cf; border-radius:4px; padding:2px 5px; margin:0 5px;">楼盘圈子</a>逛一下吧。
+    </p>
+</div>

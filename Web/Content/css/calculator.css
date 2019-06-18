@@ -1,0 +1,75 @@
+/*Updated:2017.06.12
+------------------------*/
+@charset "utf-8";
+.calcleft{ width:840px; float:left;}
+.calcleft h2{ height:68px; background:url(../images/c-calculator.jpg) no-repeat #1475cf; line-height:68px; color:#fff; font-size:24px; padding-left:80px;}
+.calc-content{ padding:20px 40px;}
+.calc-contentnav{ height:60px; overflow:hidden; padding:0 10px 0 40px;}
+.calc-contentnav ul{ line-height:60px;}
+.calc-contentnav ul li{ margin-right:30px; float:left;}
+.calc-contentnav ul li a{color: #959595; font-size:16px;padding-bottom: 8px; font-weight:bold;}
+.calc-contentnav ul li a:hover,.calc-contentnav ul li a.active {border-bottom:3px solid #183884; color:#4a4d5c;}
+.calc-content{ padding:0px 60px; font-size:14px; color:#000;}
+.calc-content .w450{ width:450px; float:left;}
+.calc-content .w450 h4{ padding:13px 0; font-weight:normal;}
+.pdtb13{ padding:5px 0;line-height:40px;}
+.calc-content .w270{ width:270px; float:right;}
+.calcright{ float:right; width:340px;}
+.w270 .pdtb13{ line-height:24px;}
+.calcright h2{ background:#fafafa;height:66px; line-height:66px; padding-left:30px; font-size:24px; border:1px solid #dcdddd;}
+.calcright-cont{ padding:20px 40px;}
+.conttable{ margin-bottom:25px;}
+.conttable h3{ font-size:14px; color:#000; font-weight:normal;}
+.conttable table{width:100%; border:none;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;table-layout:fixed; text-align:center; margin-top:8px;}
+.conttable table tr{ font-size:14px;color:#000;}
+.conttable table tr th{  height:28px; background:#d1d6da; border:1px solid #fff; font-weight:normal;}
+.conttable table tr td{height:28px; border:1px solid #dcdddd; overflow:hidden;white-space: nowrap; text-overflow: ellipsis; }
+.w80{ width:80px;}
+/*input*/ 
+input[type=checkbox],input[type=radio]{-webkit-appearance: none;appearance: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;position: relative; border:2px solid #efefef;cursor: pointer;background: #fff;top:2px;}
+input[type=radio]{width: 14px;height: 14px;cursor: pointer; }
+input[type=radio]:active,input[type=radio]:checked,input[type=radio]:checked::after{border-color: #e3e3e3;background: url(../images/calculatoricon.png) #1475cf no-repeat;}
+input[type=radio]:active,input[type=radio]:checked,input[type=radio]:checked::after { background-position:1px -28px; border:0;}
+input[type=radio]:hover{border-color:#1475cf;}
+input[type=radio]:checked::after{display: block;position: absolute;top:0;right: 0px;left:0;color:#e44544}
+input[type=radio]:focus {outline: none;border-color:#e3e3e3;}
+/*selct*/
+.selewrap{position:relative;line-height:38px;border: 1px solid #efefef; cursor:pointer; display:inline-block;}
+.selewrap span{padding-left: 8px;}
+.selewrap i{width:40px;height:40px;display: inline-block;position: absolute;right: 0;top: 0; }
+.selewrap i b{display:inline-block;width:12px; height:12px; background: url(../images/calculatoricon.png) no-repeat; background-position:-1px -5px;  position: absolute;top:17px;left:15px;}
+.selewrap ul{position: absolute;left: -1px;top:35px; width: 100%;border: 1px solid #dcdddd; max-height:160px; overflow-y:auto;overflow-x:hidden; z-index:99; }
+.selewrap ul li{height:38px;line-height:38px;}
+.selewrap ul li a {display:block; padding-left:10px; color:#000;}
+.selewrap ul li a:hover{background: #1475cf;color: #fff;}
+.ptbox{ border-bottom:1px solid #dcdddd; width:110px;text-align:center;}
+.w160{ width:160px;}
+.w205{ width:205px;}
+.w70{ width:70px;}
+.w85{ width:85px;}
+.w110{ width:110px;}
+.w115{ width:115px;}
+.ta-r{ text-align:right;}
+.bg-blue14{ background:#1475cf;}
+.bg-garyef{ background:#efefef;}
+.bg-gary95{ background:#959595;}
+.bg-gray-e8{ background:#e8e8e8;}
+.mt20{ margin-top:20px;}
+.pd-r50{ padding-right:50px;}
+.button{ display:inline-block;padding:0 30px; border-radius:6px; color:#fff; cursor:pointer; line-height:40px;}
+.button:visited,.button:hover{ color:#fff;}
+.ptbox-2{text-align: left;1px solid; width: 120px; sans-serif; height: 17px; color: #000;text-decoration: none; text-align:center;}
+.textbix{ padding:20px 30px 10px 80px; background:#fafafa; border:1px solid #dcdddd; font-size:14px;}
+.textbix .tex{ margin-left:70px; display:inline-block;}
+.textbix h4{ width:70px; float:left; font-weight:normal; position:absolute;}
+.other{ color:#1475cf; margin-left:5px;}
+.other:visited{color:#1475cf;}
+.c95{ color:#959595; line-height:20px; }
+.w90{ width:90px;}
+.lh20{ line-height:20px;}
+.lh30{ line-height:30px;}
+.w55{ width:55px;}
+.w50{ width:50px;}
+.ml60{ margin-left:60px;}
+.pdtb13 select{ height:40px;}
+ 

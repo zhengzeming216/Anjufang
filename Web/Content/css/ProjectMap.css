@@ -1,0 +1,250 @@
+﻿
+/* 详细页百度地图样式 */
+
+/*==选中房源==*/
+
+
+.close
+{
+    width: 18px;
+    line-height: 20px;
+    display: none;
+}
+.close a
+{
+    background: url(../images/map/bk_tip.gif) -177px -38px no-repeat;
+    width: 18px;
+    height: 22px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.close a:hover
+{
+    background: url(../images/map/bk_tip.gif) -197px -38px no-repeat;
+    text-decoration: none;
+}
+
+.hover
+{
+    z-index: 400;
+}
+.maskleft label, .left_hover label
+{
+    height: 35px;
+}
+.maskleft, .left_hover
+{
+    height: 35px;
+    padding: 0px 3px 0px 8px;
+    font: 12px/23px Arial;
+    color: #fff;
+    background: url(../images/map/mask_bk.gif) no-repeat;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.left_hover
+{
+    background-position: 0 -80px;
+}
+.maskright, .right_hover
+{
+    width: 5px;
+    height: 35px;
+    background: url(../images/map/mask_bk.gif) no-repeat;
+}
+.maskright
+{
+    background-position: 100% -40px;
+}
+.right_hover
+{
+    background-position: 100% -120px;
+}
+.left_hover button
+{
+    background: url(../images/map/bk_tip.gif) -173px -36px no-repeat;
+    width: 18px;
+    height: 22px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.left_hover button:hover
+{
+    background: url(../images/map/bk_tip.gif) -193px -36px no-repeat;
+}
+.mask_default
+{
+    position: absolute;
+    font-size: 12px;
+    color: rgb(0, 88, 144);
+    font-family: 宋体;
+    white-space: nowrap;
+    cursor: pointer;
+    height: 35px;
+    display: block;
+}
+.markercount, .markerclose
+{
+    display: none;
+}
+
+/*==弹出窗口==*/
+
+#map_propwind
+{
+    display: none;
+    width: 550px;
+    height: 254px;
+    z-index: 50;
+    position: absolute;
+    padding: 0; /*                   left: 100px;         top: 10px;             text-align: left;         line-height: 30px;         padding-left: 15px;*/
+}
+
+
+/*==搜索不到房源提示==*/
+
+.map_notice
+{
+    background-color: white;
+    border: solid #999;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #999;
+    border-right-color: #999;
+    border-bottom-color: #999;
+    border-left-color: #999;
+    display: none;
+    height: 145px;
+    position: absolute;
+    width: 320px;
+    z-index: 10; /*             left: 520px;              top: 100px;*/
+}
+.l1
+{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.l2
+{
+    font-size: 12px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.l3ul
+{
+    font-size: 12px;
+    line-height: 25px;
+    margin: 10px 0px 0px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-left: 40px;
+}
+.isee
+{
+    margin-top: 30px;
+    position: relative;
+}
+.noprompt
+{
+    left: 22px;
+    line-height: 15px;
+    position: absolute;
+    top: 5px;
+}
+.l4
+{
+    background-color: #D1E8B2;
+    border: 1px solid #060;
+    line-height: 25px;
+    margin: 0px auto;
+    text-align: center;
+    width: 100px;
+}
+/**bolstyle**/
+.bolmaskleft label, .bolleft_hover label
+{
+    height: 35px;
+}
+.bolmaskleft, .bolleft_hover
+{
+    height: 35px;
+    padding: 0px 3px 0px 8px;
+    font: 12px/23px Arial;
+    color: #fff;
+    background: url(../images/map/mask_bk.gif) no-repeat 0 -160px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.bolleft_hover
+{
+    background-position: 0 -80px;
+}
+.bolmaskright, .bolright_hover
+{
+    width: 5px;
+    height: 35px;
+    background: url(../images/map/mask_bk.gif) no-repeat 0 -200px;
+}
+.bolmaskright
+{
+    background-position: 100% -200px;
+}
+.bolright_hover
+{
+    background-position: 100% -120px;
+}
+.bolleft_hover button
+{
+    background: url(../images/map/bk_tip.gif) -173px -36px no-repeat;
+    width: 18px;
+    height: 22px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.bolleft_hover button:hover
+{
+    background: url(../images/map/bk_tip.gif) -193px -36px no-repeat;
+}
+
+.map_bol_project
+{
+    height: 35px;
+    padding: 0px 3px 0px 8px;
+    font: 12px/23px Arial;
+    color: #fff;
+    background: url(../images/map/mask_bk.gif) no-repeat;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.bolright
+{
+    width: 5px;
+    height: 35px;
+    background-position: -50px -0px;
+}
+
+/*--*/
+.wx_wrap {position: fixed; _position: absolute; bottom: 120px;right: 20px; border: 1px solid #CCC; width: 88px;line-height: 24px;height: 88px;padding: 8px 5px;  color: #666;text-align: center;
+    _margin-top: expression(document.documentElement.clientHeight-this.style.pixelHeight+document.documentElement.scrollTop);}
+
+.close_but { text-align: right; line-height: 4px;font-family: Geneva, Arial, Helvetica, sans-serif;font-size: 10px;}
+.close_but a{ color:#666;}
+.close_but a:hover{ text-decoration:none;}

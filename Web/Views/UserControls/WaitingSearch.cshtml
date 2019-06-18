@@ -1,0 +1,25 @@
+﻿@using Common;
+@{ 
+    Layout = null;
+    string SearchKey = ViewBag.SearchKey;
+}
+<div class="serwrap fix">
+    <div class="fix">
+        <div class="sort-sear">
+            <input id="txtSearchkey" type="text" class="inp-t f14" placeholder="支持姓名、身份证、备案回执号模糊查询" value="@(string.IsNullOrEmpty(SearchKey)?"":SearchKey)">
+            <div class="sele-menu" id="sort-menu">
+                <span id="SelectSpan" typeid="0">智能</span><span class="arrow-b"></span>
+                <div class="sele-menu-sup">
+                    <ul>
+                        <li onclick="SelectType(this)" data="支持姓名、身份证、备案回执号模糊查询" typeid="0" style="display:none;">智能</li>
+                        <li onclick="SelectType(this)" data="支持姓名模糊查询" typeid="2">姓名</li>
+                        <li onclick="SelectType(this)" data="支持身份证模糊查询" typeid="3">身份证</li>
+                        <li onclick="SelectType(this)" data="支持备案回执号模糊查询" typeid="1">回执编号</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <input type="button" class="sort-but" value="查询" onclick="Search()">
+    </div>
+    <p class="gray-95 f12 mt5 mb20 ml10" style="text-align:left;"> 智能查询支持姓名、身份证、备案回执号的模糊匹配</p>
+</div>

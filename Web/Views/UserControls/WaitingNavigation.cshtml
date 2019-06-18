@@ -1,0 +1,11 @@
+﻿@using SZHomeAnJuFang.Common;
+@{ 
+    Layout = null;
+    int WaitingType = ViewBag.WaitingType;
+}
+<ul class="f-yh f16 anjuTab anju-lhTab fix">
+    <li class="@(WaitingType == (int)Enums.eWaitingNavigation.安居房轮候 ? "active":"")"><a href="/ajpm"  title="安居房轮候排名查询">安居房轮候排名查询</a></li>
+    <li class="@(WaitingType == (int)Enums.eWaitingNavigation.安居房资格 ? "active":"")"><a href="/ajfzg" title="安居房资格查询">安居房资格查询</a></li>
+    <li class="@(WaitingType == (int)Enums.eWaitingNavigation.公租房轮候 ? "active":"")"><a href="/gzfpm" title="公租房轮候排名查询">公租房轮候排名查询</a></li>
+    <li class="@(WaitingType == (int)Enums.eWaitingNavigation.公租房资格 ? "active":"")"><a href="/gzfzg" title="公租房资格查询">公租房资格查询</a></li>
+</ul>

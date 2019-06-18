@@ -1,0 +1,64 @@
+.ac_results {
+	padding: 5px 2px;
+	border: 1px solid #e9e9e9;
+	background: #f3fbfe;
+	overflow: hidden;	
+	width:500px;
+
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+      background: #f3fbfe;
+   z-index: 9999;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 0 8px;
+	cursor: default;
+	display: block;
+	
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 25px;
+	overflow: hidden;
+	color: #777;
+}
+
+.ac_loading {
+	background: white url(http://static.szhome.com/market/images/indicator.gif) right center no-repeat;
+}
+
+.ac_odd ,.ac_even {
+	background-color: #f3fbfe;
+}
+
+.ac_odd span ,ac_even span {
+	font-size: 13px;
+	color: #003AE8;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+li.ac_over {
+	background-color: #eee;
+	/*color: white;*/
+}
+
+li.ac_over span {
+	color: white;
+}

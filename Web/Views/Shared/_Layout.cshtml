@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+@{
+    string keywords = "安居房,深圳安居房,公租房,深圳公租房,龙海家园公租房,深康村,深圳共有产权房";
+    string des = "深圳安居房是深圳房地产信息网旗下网站，是深圳资料全面、数据真实、覆盖受众广的安居房信息平台。为受众提供权威的安居房和公租房的申请指引以及相关资讯的发布。";
+    if (!string.IsNullOrEmpty(ViewBag.Keywords))
+    {
+        keywords = ViewBag.Keywords;
+    }
+    if (!string.IsNullOrEmpty(ViewBag.Description))
+    {
+        des = ViewBag.Description;
+    }
+}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="keywords" content="@keywords" />
+    <meta name="description" content="@des" />
+    <meta name="applicable-device" content="pc">
+    <meta name="author" content="深圳房地产信息网" />
+    <meta name="Copyright" content="深圳房地产信息网版权所有" />
+    <link href="~/content/css/newhouse-base.css?v=2018010301" rel="stylesheet" />
+    <link href="~/content/css/newhouse-marster.css?v=2017111301" rel="stylesheet" />
+    @RenderSection("Css", false)
+    <script src="~/Content/js/lib/jquery/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    @*@Html.Action("Header", "UserControls", new { PageType = ViewBag.PageType })*@
+    <!--头部结束-->
+    @RenderBody()
+    @*@Html.Action("Footer", "UserControls")*@
+</body>
+</html>
+<script src="~/content/js/lib/layer/layer.js"></script>
+<script src="~/content/js/module/common.js?v=2018010301"></script>
+<script src="~/content/js/module/commonsearch.js"></script>
+@RenderSection("Js", false)
+<script type="text/javascript">
+        (function(){
+            var bp = document.createElement('script');
+            bp.src = '//push.zhanzhang.baidu.com/push.js';
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+</script>

@@ -1,0 +1,56 @@
+﻿@{
+    Layout = null;//文章列表
+    List<Dictionary<string, object>> List = ViewBag.List;
+}
+@{
+    foreach (Dictionary<string, object> dic in List)
+    {
+        if ((int)dic["IconsType"] == (int)SZHomeCommon.Commons.Enums.SubjectIconType.无图)
+        {
+            <div class="l-content">
+                <div class="fix"><a href="@(dic["Url"])" class="title" title="@(dic["Title"])" target="_blank">@dic["Title"]</a></div>
+                <p class="twxt-p"><span>@dic["ShowUsername"]</span><span>@dic["PubDate"]</span></p>
+                <div class="cent">
+                    <a href="@(dic["Url"])" title="@(dic["Title"])" target="_blank">
+                        @dic["Summary"]
+                    </a>
+                </div>
+            </div>
+        }
+        else if ((int)dic["IconsType"] == (int)SZHomeCommon.Commons.Enums.SubjectIconType.小图)
+        {
+            <div class="l-content">
+                <div class="left wid545 fix">
+                    <a href="@(dic["Url"])" class="title" title="@(dic["Title"])" target="_blank">@(dic["Title"])</a>
+                    <p class="twxt-p"><span>@dic["ShowUsername"]</span><span>@dic["PubDate"]</span></p>
+                    <div class="cent">
+                        <a href="@(dic["Url"])" title="@(dic["Title"])" target="_blank">
+                            @(dic["Title"])
+                        </a>
+                    </div>
+                </div>
+                <a href="@(dic["Url"])" title="@(dic["Title"])" target="_blank" class="t-small"><img src="@(dic["IconsUrl"])"></a>
+            </div>
+        }
+        else if ((int)dic["IconsType"] == (int)SZHomeCommon.Commons.Enums.SubjectIconType.宽图)
+        {
+            <div class="l-content">
+                <div class="fix"><a href="@(dic["Url"])" class="title" title="@(dic["Title"])" target="_blank">@(dic["Title"])</a></div>
+                <p class="gray8 mt5 f14 twxt-p"><span>@dic["ShowUsername"]</span><span>@dic["PubDate"]</span></p>
+                <a href="@(dic["Url"])" title="@(dic["Title"])" target="_blank"><img src="@(dic["IconsUrl"])" class="t-big"></a>
+            </div>
+        }
+        else if ((int)dic["IconsType"] == (int)SZHomeCommon.Commons.Enums.SubjectIconType.三图)
+        {
+            <div class="l-content">
+                <div class="fix"><a href="@(dic["Url"])" class="title" title="@(dic["Title"])" target="_blank">@(dic["Title"])</a></div>
+                <p class="gray8 mt10 f14 fix"><span>@dic["ShowUsername"]</span> <span>@dic["PubDate"]</span></p>
+                <ul class="threeList threeList-detail">
+                    <li><a href="@(dic["Url"])" title="@(dic["Title"])" target="_blank"><img src="@(dic["IconsUrl"])" alt="@(dic["Title"])"></a></li>
+                    <li><a href="@(dic["Url"])" title="@(dic["Title"])" target="_blank"><img src="@(dic["IconsUrl2"])" alt="@(dic["Title"])"></a></li>
+                    <li><a href="@(dic["Url"])" title="@(dic["Title"])" target="_blank"><img src="@(dic["IconsUrl3"])" alt="@(dic["Title"])"></a></li>
+                </ul>
+            </div>
+        }       
+    }
+}
